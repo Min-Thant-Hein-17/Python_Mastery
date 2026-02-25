@@ -2,60 +2,63 @@ import streamlit as st
 from stellar_sdk import Server
 import pandas as pd
 
-st.set_page_config(page_title="DMMK Fraud Monitor", layout="wide")
+# Setup
 server = Server("https://horizon.stellar.org")
-
-st.title("🛡️ DMMK Transaction Dashboard")
+st.title("🏦 DMMK Account Dashboard")
 
 # User Input
-target_account = st.text_input("Enter Wallet Address (G...)", "")
+account_id = st.text_input("Enter Wallet Address (G...)", "")
 
-if target_account:
+if account_id:
     try:
-        # Fetching data from Stellar
-        ops = server.operations().for_account(target_account).limit(50).order(desc=True).call()
-        records = ops['_embedded']['records']
+        # STEP 1: Fetch transactions specifically for payments
+        # We use .payments() instead of .operations() to get clean money-flow data
+        response = server.payments().for_account(account_id).limit(50).order(desc=True).call()
+        records = response['_embedded']['records']
 
+        # STEP 2: Safety Check - If records is empty, don't run the rest
         if not records:
-            st.warning("No transactions found for this account.")
+            st.warning("This account has no transaction history.")
         else:
-            income_total = 0.0
-            outcome_total = 0.0
-            rows = []
+            money_in = 0.0
+            money_out = 0.0
+            history = []
 
             for op in records:
-                # Check for DMMK payments
-                if op['type'] == 'payment' and op.get('asset_code') == 'DMMK':
+                # Filter for DMMK assets specifically
+                asset_code = op.get('asset_code', 'XLM') 
+                if asset_code == 'DMMK':
                     amount = float(op['amount'])
                     
-                    if op['to'] == target_account:
-                        income_total += amount
-                        flow = "INCOME"
+                    # Determine Income vs Outcome
+                    if op['to'] == account_id:
+                        money_in += amount
+                        direction = "INCOME"
                     else:
-                        outcome_total += amount
-                        flow = "OUTCOME"
-
-                    rows.append({
+                        money_out += amount
+                        direction = "OUTCOME"
+                    
+                    history.append({
                         "Time": op['created_at'],
                         "Amount": amount,
-                        "Flow": flow,
-                        "Hash": op['transaction_hash'][:8] + "..."
+                        "Type": direction,
+                        "From": op['from'][:6] + "...",
+                        "To": op['to'][:6] + "..."
                     })
 
-            # --- DISPLAY SECTION ---
-            # 1. Show the Sums (Metrics)
+            # STEP 3: The "Money In / Money Out" Visuals
             col1, col2 = st.columns(2)
-            col1.metric("Total Money In (DMMK)", f"{income_total:,.2f}")
-            col2.metric("Total Money Out (DMMK)", f"{outcome_total:,.2f}")
+            col1.metric("Total Money In (DMMK)", f"{money_in:,.2f}")
+            col2.metric("Total Money Out (DMMK)", f"{money_out:,.2f}")
 
-            # 2. Show the Individual Transactions
-            if rows:
-                df = pd.DataFrame(rows)
-                st.subheader("Transaction History")
+            # STEP 4: The Transaction Table (Summed up automatically)
+            if history:
+                df = pd.DataFrame(history)
+                st.subheader("Recent DMMK Transactions")
                 st.dataframe(df, use_container_width=True)
                 
-                # 3. Simple Bar Chart
+                # Visual Chart
                 st.bar_chart(df.set_index('Time')['Amount'])
 
     except Exception as e:
-        st.error(f"Account not found or connection error: {e}")
+        st.error(f"Error fetching data: {e}")

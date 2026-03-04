@@ -8,7 +8,7 @@ This sub-repository is the Mastery of Debugging.
        width="700">
 </p>
 
-Debugging Mastery: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwtXdovOD1nTaR7TzDDGJn4-upjUbTY3Yig&s 
+Debugging Mastery: [https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwtXdovOD1nTaR7TzDDGJn4-upjUbTY3Yig&s ](https://share.google/LHA1uDzfnMxM78GpT)
 
 The Art of Debugging: https://www.masaischool.com/blog/content/images/2023/05/debugging-tn.png 
 

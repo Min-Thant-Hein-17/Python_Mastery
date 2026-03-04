@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <title>THis is our first flask.</title>
+    <body>
+        <form action="/home" method="POST">
+            <input type="text" name="sl" placeholder="Enter sepal_length">
+            <input type="text" name="sw" placeholder="Enter sepal_width">
+            <input type="text" name="pl" placeholder="Enter petal_length">
+            <input type="text" name="pw" placeholder="Enter petal_width">
+            <input type="Submit">
+        </form>
+        {% if prediction %}
+         the prediction result is {{prediction}}
+        {% endif %}
+    </body>
+</html>

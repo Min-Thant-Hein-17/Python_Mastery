@@ -11,3 +11,5 @@ This sub-repository is the Mastery of Debugging.
 Debugging Mastery: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwtXdovOD1nTaR7TzDDGJn4-upjUbTY3Yig&s 
 
 The Art of Debugging: https://www.masaischool.com/blog/content/images/2023/05/debugging-tn.png 
+
+Debug like a pro: https://media.licdn.com/dms/image/v2/D5612AQGlFePw3jkFMA/article-cover_image-shrink_720_1280/B56Zj_GQWjH8AI-/0/1756626495002?e=2147483647&v=beta&t=eSxPy07_LUcU-UGUD45wf6e3BXFCpUYFwnzC8poaNnU

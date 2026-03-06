@@ -23,3 +23,16 @@ Kubernetes Usage: https://share.google/S2BqLEUhNpU956pGu
        width="700">
 </p>
 
+##########
+
+What is Kubernete's architecture? https://share.google/LaCrv0m3INaJETr09
+
+<p align="center">
+  <img src="https://cdn.shopaccino.com/igmguru/images/kubernetes-architecture-components-3528183568043978.jpg"
+       alt="Python gears illustration"
+       width="700">
+</p>
+
+#####
+
+

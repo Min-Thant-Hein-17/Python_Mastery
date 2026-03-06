@@ -8,7 +8,11 @@ Complete Guide: https://share.google/GI8TFiiCuj0mnZcZe
        width="700">
 </p>
 
+
+
 ##########
+
+Hugging face: 
 
 
 <p align="center">

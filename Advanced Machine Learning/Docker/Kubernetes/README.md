@@ -12,6 +12,9 @@ What is Kubernetes? https://share.google/GdIjbzJ57JRou8NHl
        width="700">
 </p>
 
+###############
+
+Kubernetes Usage: https://share.google/S2BqLEUhNpU956pGu 
 
 
 <p align="center">
@@ -20,5 +23,3 @@ What is Kubernetes? https://share.google/GdIjbzJ57JRou8NHl
        width="700">
 </p>
 
-
-Kubernetes Usage: https://share.google/S2BqLEUhNpU956pGu 

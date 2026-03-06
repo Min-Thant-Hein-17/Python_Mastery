@@ -36,10 +36,14 @@ Hugging Face (Ai models and tools): https://share.google/bvJPifhIOprRiAn4C
 
 Hugging face: 
 
+
 <p align="center">
   <img src="https://share.google/mhMr4S2Pvl92aT3Og"
        alt="Python gears illustration"
        width="700">
 </p>
 
+
+
+#########
 

@@ -12,11 +12,11 @@ Complete Guide: https://share.google/GI8TFiiCuj0mnZcZe
 
 ##########
 
-Hugging face: 
+What is Hugging face (Beginner Guide): https://share.google/Fb4VcRTKt7ZXmZwwi
 
 
 <p align="center">
-  <img src="https://arjancodes.com/_astro/python-function-optimization-tips-for-better-code-maintainability-leading.BOKGeHmn_Z1KWTfm.webp"
+  <img src="https://365datascience.com/resources/blog/thumb@1024_hsgjdcymxg5-is-hugging-face-open-source.webp"
        alt="Python gears illustration"
        width="700">
 </p>

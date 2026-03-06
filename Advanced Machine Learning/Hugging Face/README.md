@@ -47,3 +47,4 @@ Hugging face: https://share.google/mhMr4S2Pvl92aT3Og
 
 #########
 
+Hugging Face Models on AWS accelerators: [https://share.google/665F4Rlzb2iN5LYwm](https://share.google/665F4Rlzb2iN5LYwm)

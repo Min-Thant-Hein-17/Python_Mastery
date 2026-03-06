@@ -34,11 +34,11 @@ Hugging Face (Ai models and tools): https://share.google/bvJPifhIOprRiAn4C
 
 ########
 
-Hugging face: 
+Hugging face: https://share.google/mhMr4S2Pvl92aT3Og
 
 
 <p align="center">
-  <img src="https://share.google/mhMr4S2Pvl92aT3Og"
+  <img src="https://cdn-blog.scalablepath.com/uploads/2024/06/hugging-face-datasets-models-spaces.png"
        alt="Python gears illustration"
        width="700">
 </p>

@@ -23,4 +23,23 @@ What is Hugging face (Beginner Guide): https://share.google/Fb4VcRTKt7ZXmZwwi
 
 #####
 
+Hugging Face (Ai models and tools): https://share.google/bvJPifhIOprRiAn4C 
+
+<p align="center">
+  <img src="https://cdn.botpenguin.com/assets/website/Hugging_Face_1_e8ba23f378.webp"
+       alt="Python gears illustration"
+       width="700">
+</p>
+
+
+########
+
+Hugging face: 
+
+<p align="center">
+  <img src=""
+       alt="Python gears illustration"
+       width="700">
+</p>
+
 

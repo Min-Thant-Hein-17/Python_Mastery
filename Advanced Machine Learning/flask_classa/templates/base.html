@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style/style.css')}}">
+    <body>
+        
+        {% include 'banner.html' %}
+        {% include 'slider.html' %}
+        <div class="container">
+            <div class="sidebar">
+            {% include 'sidebar.html' %}
+            </div>
+            <div name="main-content"> 
+                {% block maincontent%}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>

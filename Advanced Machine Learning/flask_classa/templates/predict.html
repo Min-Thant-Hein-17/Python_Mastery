@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+    Predict
+{% endblock %}
+
+{% block maincontent %}
+<h1> This is for iris flower classification.</h1>
+<div>
+    <form action="/predict" method="POST">
+        <input type="text" name="sepal_length" placeholder="Enter sepal  length">
+        <input type="text" name="sepal_width" placeholder="Enter sepal  width">
+        <input type="text" name="petal_length" placeholder="Enter petal  length">
+        <input type="text" name="petal_width" placeholder="Enter petal  length">
+        <input type="Submit">
+        {%  if pred_value %}
+        <h3> This is {{pred_value}}</h3>
+        {% endif %}
+        
+    </form>
+</div>
+{% endblock %}

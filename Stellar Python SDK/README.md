@@ -1,6 +1,6 @@
 # Stellar Python SDK 
 
-This is the collection of Min Thant's Stellar Python SDK. 
+This is the collection of Min Thant's Stellar Python SDK. https://share.google/aJCtuuM5wEX5AgSFW
 
 
 
@@ -10,5 +10,3 @@ This is the collection of Min Thant's Stellar Python SDK.
        width="700">
 </p>
 
-
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfcxi74pcOsz7VcV514Gtfw1KEHeMzhttF1A&s

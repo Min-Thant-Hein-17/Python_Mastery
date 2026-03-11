@@ -15,4 +15,15 @@ Understanding LangChain: https://share.google/cr5e1OzbMlVavPpTl
 
 ############
 
+Building LangChain: https://share.google/jnLPNrRoTtsFDDb4p
+
+<p align="center">
+  <img src="https://blog.langchain.com/content/images/2023/09/image.png"
+       alt="Python gears illustration"
+       width="700">
+</p>
+
+
+###########
+
 

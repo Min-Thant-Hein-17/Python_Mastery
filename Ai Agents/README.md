@@ -26,4 +26,15 @@ Building LangChain: https://share.google/jnLPNrRoTtsFDDb4p
 
 ###########
 
+LangChain 101: https://share.google/aop9wKruNmsOjgDAY
+
+<p align="center">
+  <img src="https://www.kdnuggets.com/wp-content/uploads/c_langchain_101_build_gptpowered_applications_1.jpg"
+       alt="Python gears illustration"
+       width="700">
+</p>
+
+################
+
+
 

@@ -35,6 +35,14 @@ LangChain 101: https://share.google/aop9wKruNmsOjgDAY
 </p>
 
 ################
+GPT4 + Python + LangChain = Chat-Bot : https://blog.nextideatech.com/chat-with-documents-using-langchain-gpt-4-python/ 
 
+<p align="center">
+  <img src="https://blog.nextideatech.com/wp-content/uploads/2023/05/Python-2.png"
+       alt="Python gears illustration"
+       width="700">
+</p>
+
+##########
 
 

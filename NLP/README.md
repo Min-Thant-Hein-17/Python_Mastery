@@ -21,4 +21,14 @@ Spacy VS NLTK : https://share.google/aZJDk1Y3WfPoEjtdA
 </p>
 
 ###
+Spacy Vs NLTK: https://share.google/PJrDQl9FNO8PASZph
+
+<p align="center">
+  <img src="https://pbs.twimg.com/media/GLhwj5pa0AAD1g5.jpg"
+       alt="Python gears illustration"
+       width="700">
+</p>
+
+############
+
 

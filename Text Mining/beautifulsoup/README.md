@@ -25,3 +25,17 @@ Beautiful-Soup Vs Selenium Vs Scrapy: https://share.google/9KtjNfahJtNhT9F4U
 
 
 ###
+
+7 Python Libraries for Web-scraping: https://share.google/HGnyhxWTbWKO63zV1 
+
+<p align="center">
+  <img src="https://daxg39y63pxwu.cloudfront.net/images/blog/python-libraries-for-web-scraping/Python_libraries_for_web_scraping.png"
+       alt="Python gears illustration"
+       width="700">
+</p>
+
+#########
+
+
+
+ 

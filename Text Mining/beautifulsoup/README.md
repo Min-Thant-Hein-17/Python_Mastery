@@ -14,3 +14,14 @@ Difference between Scrapy and Beautiful Soup on Web Scraping: https://share.goog
 
 ########
 
+Beautiful-Soup Vs Selenium Vs Scrapy: https://share.google/9KtjNfahJtNhT9F4U
+
+<p align="center">
+  <img src="https://coredevsltd.com/articles/wp-content/uploads/2023/11/BeautifulSoup-vs-Selenium-vs-Scrapy.png"
+       alt="Python gears illustration"
+       width="700">
+</p>
+
+
+
+###

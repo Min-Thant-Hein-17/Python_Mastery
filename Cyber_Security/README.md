@@ -17,5 +17,5 @@ Few Important Python Libraries for Cyber_security: https://share.google/RH8C22Gu
 
 <img src="https://www.theknowledgeacademy.com/_files/images/Few_important_Python_libraries_for_Cyber_Security.png" alt="Python Libraries for Cyber Security" width="600">
 
-![Python Libraries for Cyber Security](https://www.theknowledgeacademy.com/_files/images/Few_important_Python_libraries_for_Cyber_Security.png)
 
+![Python Libraries for Cyber Security](Few_important_Python_libraries_for_Cyber_Security.png)

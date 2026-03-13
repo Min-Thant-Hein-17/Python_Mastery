@@ -25,10 +25,6 @@ Few Important Python Libraries for Cyber_security: https://share.google/RH8C22Gu
 ###
 
 <p align="center">
-
-![Few Important Python Libraries for Cyber Security](images/python-cybersecurity.png)
-
+  <img src="https://raw.githubusercontent.com/USERNAME/REPO/main/images/python-cybersecurity.png" width="700">
 </p>
-``
-
 

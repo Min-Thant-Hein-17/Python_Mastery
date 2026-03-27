@@ -17,3 +17,6 @@ Then copy this, " python -m http.server 8000 " and paste!
 Then we can click the following local host link and we can see the website dashbaord! 
 
 http://localhost:8000/ 
+
+
+Note: index.html file should be the name of the file! If not, please fix/ change it into! Otherwise, we will see error! (meaning we will not see any data on dashboard although it is created!

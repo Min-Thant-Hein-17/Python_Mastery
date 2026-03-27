@@ -12,7 +12,7 @@ After that, call cmd (command prompt), write down "cd " (cd and 1 space)! and pa
 
 Run by clicking enter! 
 
-Then copy this, "  " and paste! 
+Then copy this, " python -m http.server 8000 " and paste! 
 
 Then we can click the following local host link and we can see the website dashbaord! 
 

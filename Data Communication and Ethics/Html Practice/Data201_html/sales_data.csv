@@ -1,0 +1,17 @@
+date,region,category,sales,profit
+2026-01-05,Bangkok,Electronics,1200,240
+2026-01-10,Chiang Mai,Clothing,800,160
+2026-01-15,Bangkok,Food,600,120
+2026-02-03,Phuket,Electronics,1500,300
+2026-02-08,Chiang Mai,Food,700,140
+2026-02-14,Bangkok,Clothing,950,190
+2026-03-01,Phuket,Food,500,100
+2026-03-05,Bangkok,Electronics,1800,360
+2026-03-09,Chiang Mai,Clothing,1100,220
+2026-03-15,Phuket,Electronics,1300,260
+2026-04-02,Bangkok,Food,750,150
+2026-04-10,Chiang Mai,Electronics,1700,340
+2026-04-18,Phuket,Clothing,900,180
+2026-05-01,Bangkok,Clothing,1000,200
+2026-05-11,Chiang Mai,Food,650,130
+2026-05-20,Phuket,Electronics,1600,320

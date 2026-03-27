@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Make the page responsive on mobile/tablet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>D3.js Instructor Dashboard</title>
+
+  <!-- Import D3.js library from CDN -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <style>
+    /* ===== BASIC PAGE STYLING ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f6f9;
+      color: #222;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    /* Filter section */
+    .controls {
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+
+    /* ===== KPI CARD LAYOUT ===== */
+    .kpi-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .kpi-card {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .kpi-title {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .kpi-value {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    /* ===== CHART LAYOUT ===== */
+    .charts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .chart-box {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .chart-box.full-width {
+      grid-column: 1 / span 2;
+    }
+
+    .chart-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Tooltip box that appears during mouse hover */
+    .tooltip {
+      position: absolute;
+      background: rgba(0,0,0,0.75);
+      color: white;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    /* Axis styling */
+    .axis path,
+    .axis line {
+      stroke: #999;
+    }
+
+    .axis text {
+      font-size: 12px;
+    }
+
+    /* Responsive behavior */
+    @media (max-width: 900px) {
+      .kpi-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .charts {
+        grid-template-columns: 1fr;
+      }
+
+      .chart-box.full-width {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== PAGE TITLE ===== -->
+  <h1>Sales Dashboard</h1>
+
+  <!-- ===== FILTER UI ===== -->
+  <div class="controls">
+    <label for="regionFilter"><strong>Filter by Region:</strong></label>
+    <select id="regionFilter">
+      <!-- "All" is the default option -->
+      <option value="All">All</option>
+    </select>
+  </div>
+
+  <!-- ===== KPI CARDS ===== -->
+  <div class="kpi-container">
+    <div class="kpi-card">
+      <div class="kpi-title">Total Sales</div>
+      <div class="kpi-value" id="totalSales">0</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Total Profit</div>
+      <div class="kpi-value" id="totalProfit">0</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Transactions</div>
+      <div class="kpi-value" id="totalTransactions">0</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Average Sales</div>
+      <div class="kpi-value" id="avgSales">0</div>
+    </div>
+  </div>
+
+  <!-- ===== CHART CONTAINERS ===== -->
+  <div class="charts">
+    <div class="chart-box">
+      <div class="chart-title">Sales by Category</div>
+      <!-- Bar chart -->
+      <svg id="barChart" viewBox="0 0 500 320"></svg>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">Sales by Region</div>
+      <!-- Pie chart -->
+      <svg id="pieChart" viewBox="0 0 500 320"></svg>
+    </div>
+
+    <div class="chart-box full-width">
+      <div class="chart-title">Monthly Sales Trend</div>
+      <!-- Line chart -->
+      <svg id="lineChart" viewBox="0 0 900 350"></svg>
+    </div>
+  </div>
+
+  <!-- Tooltip element used by all charts -->
+  <div class="tooltip" id="tooltip"></div>
+
+  <script>
+    // =========================================================
+    // 1) SELECT THE TOOLTIP DIV USING D3
+    // =========================================================
+    // d3.select("#tooltip") means:
+    // "Find the HTML element whose id is tooltip"
+    const tooltip = d3.select("#tooltip");
+
+    // =========================================================
+    // 2) LOAD CSV FILE
+    // =========================================================
+    // d3.csv(...) reads the CSV file asynchronously.
+    // When the file is ready, .then(data => { ... }) runs.
+    d3.csv("sales_data.csv").then(data => {
+
+      // =======================================================
+      // 3) CLEAN / CONVERT DATA TYPES
+      // =======================================================
+      // By default, CSV values are loaded as strings.
+      // Example: "1200" is text, not a number.
+      // So we convert:
+      // - date string -> JavaScript Date object
+      // - sales string -> number
+      // - profit string -> number
+      data.forEach(d => {
+        d.date = new Date(d.date);
+        d.sales = +d.sales;
+        d.profit = +d.profit;
+      });
+
+      // =======================================================
+      // 4) GET UNIQUE REGION NAMES FOR DROPDOWN
+      // =======================================================
+      // data.map(d => d.region) creates array of regions
+      // new Set(...) removes duplicates
+      // Array.from(...) converts Set back to normal array
+      const regions = Array.from(new Set(data.map(d => d.region)));
+
+      // Select the dropdown
+      const regionFilter = d3.select("#regionFilter");
+
+      // Add one <option> for each region
+      regions.forEach(region => {
+        regionFilter
+          .append("option")
+          .attr("value", region)
+          .text(region);
+      });
+
+      // =======================================================
+      // 5) MAIN DASHBOARD UPDATE FUNCTION
+      // =======================================================
+      // This function will:
+      // - filter the data
+      // - update KPI cards
+      // - redraw all charts
+      function updateDashboard(selectedRegion) {
+        let filteredData = data;
+
+        // If user chooses one region, filter the dataset
+        if (selectedRegion !== "All") {
+          filteredData = data.filter(d => d.region === selectedRegion);
+        }
+
+        // Update all visual parts
+        updateKPIs(filteredData);
+        drawBarChart(filteredData);
+        drawPieChart(filteredData);
+        drawLineChart(filteredData);
+      }
+
+      // =======================================================
+      // 6) UPDATE KPI CARDS
+      // =======================================================
+      function updateKPIs(filteredData) {
+        // d3.sum adds up all sales values
+        const totalSales = d3.sum(filteredData, d => d.sales);
+
+        // Add all profit values
+        const totalProfit = d3.sum(filteredData, d => d.profit);
+
+        // Number of rows = number of transactions
+        const totalTransactions = filteredData.length;
+
+        // Avoid division by zero
+        const avgSales =
+          totalTransactions > 0 ? totalSales / totalTransactions : 0;
+
+        // Display the values in the HTML
+        d3.select("#totalSales").text(d3.format(",")(totalSales));
+        d3.select("#totalProfit").text(d3.format(",")(totalProfit));
+        d3.select("#totalTransactions").text(totalTransactions);
+        d3.select("#avgSales").text(d3.format(",.2f")(avgSales));
+      }
+
+      // =======================================================
+      // 7) DRAW BAR CHART: SALES BY CATEGORY
+      // =======================================================
+      function drawBarChart(filteredData) {
+        // Select the SVG for the bar chart
+        const svg = d3.select("#barChart");
+
+        // Remove old chart before drawing a new one
+        svg.selectAll("*").remove();
+
+        // Margin convention:
+        // We keep some space around chart for axes and labels
+        const margin = { top: 20, right: 20, bottom: 60, left: 60 };
+        const width = 500 - margin.left - margin.right;
+        const height = 320 - margin.top - margin.bottom;
+
+        // Create a group <g> shifted by left/top margin
+        const g = svg.append("g")
+          .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // -------------------------------------------------------
+        // GROUP DATA BY CATEGORY
+        // -------------------------------------------------------
+        // d3.rollup groups rows by category and sums sales
+        const categorySales = Array.from(
+          d3.rollup(
+            filteredData,
+            v => d3.sum(v, d => d.sales), // value function
+            d => d.category               // key function
+          ),
+          ([category, sales]) => ({ category, sales })
+        );
+
+        // -------------------------------------------------------
+        // X SCALE
+        // -------------------------------------------------------
+        // scaleBand is used for categorical data
+        const x = d3.scaleBand()
+          .domain(categorySales.map(d => d.category))
+          .range([0, width])
+          .padding(0.3);
+
+        // -------------------------------------------------------
+        // Y SCALE
+        // -------------------------------------------------------
+        // scaleLinear is used for numeric values
+        const y = d3.scaleLinear()
+          .domain([0, d3.max(categorySales, d => d.sales) || 0])
+          .nice()
+          .range([height, 0]);
+
+        // -------------------------------------------------------
+        // DRAW X AXIS
+        // -------------------------------------------------------
+        g.append("g")
+          .attr("class", "axis")
+          .attr("transform", `translate(0,${height})`)
+          .call(d3.axisBottom(x));
+
+        // -------------------------------------------------------
+        // DRAW Y AXIS
+        // -------------------------------------------------------
+        g.append("g")
+          .attr("class", "axis")
+          .call(d3.axisLeft(y));
+
+        // -------------------------------------------------------
+        // DRAW BARS
+        // -------------------------------------------------------
+        g.selectAll("rect")
+          .data(categorySales)
+          .enter()
+          .append("rect")
+          .attr("x", d => x(d.category))
+          .attr("y", d => y(d.sales))
+          .attr("width", x.bandwidth())
+          .attr("height", d => height - y(d.sales))
+          .attr("fill", "steelblue")
+
+          // Mouse hover interaction
+          .on("mouseover", function(event, d) {
+            d3.select(this).attr("fill", "orange");
+
+            tooltip
+              .style("opacity", 1)
+              .html(`<strong>${d.category}</strong><br>Sales: ${d3.format(",")(d.sales)}`)
+              .style("left", (event.pageX + 10) + "px")
+              .style("top", (event.pageY - 20) + "px");
+          })
+
+          .on("mouseout", function() {
+            d3.select(this).attr("fill", "steelblue");
+            tooltip.style("opacity", 0);
+          });
+
+        // -------------------------------------------------------
+        // ADD LABELS ABOVE BARS
+        // -------------------------------------------------------
+        g.selectAll(".label")
+          .data(categorySales)
+          .enter()
+          .append("text")
+          .attr("x", d => x(d.category) + x.bandwidth() / 2)
+          .attr("y", d => y(d.sales) - 5)
+          .attr("text-anchor", "middle")
+          .attr("font-size", "11px")
+          .text(d => d3.format(",")(d.sales));
+      }
+
+      // =======================================================
+      // 8) DRAW PIE CHART: SALES BY REGION
+      // =======================================================
+      function drawPieChart(filteredData) {
+        const svg = d3.select("#pieChart");
+        svg.selectAll("*").remove();
+
+        const width = 500;
+        const height = 320;
+        const radius = Math.min(width, height) / 2 - 40;
+
+        // Put the chart group in the center
+        const g = svg.append("g")
+          .attr("transform", `translate(${width / 2},${height / 2})`);
+
+        // Group by region and sum sales
+        const regionSales = Array.from(
+          d3.rollup(
+            filteredData,
+            v => d3.sum(v, d => d.sales),
+            d => d.region
+          ),
+          ([region, sales]) => ({ region, sales })
+        );
+
+        // Convert data into angle information for pie slices
+        const pie = d3.pie()
+          .value(d => d.sales);
+
+        // Define the arc shape
+        const arc = d3.arc()
+          .innerRadius(0)
+          .outerRadius(radius);
+
+        // Color scale for slices
+        const color = d3.scaleOrdinal(d3.schemeTableau10);
+
+        // Draw slices
+        g.selectAll("path")
+          .data(pie(regionSales))
+          .enter()
+          .append("path")
+          .attr("d", arc)
+          .attr("fill", (d, i) => color(i))
+          .attr("stroke", "white")
+          .style("stroke-width", "2px")
+
+          .on("mouseover", function(event, d) {
+            tooltip
+              .style("opacity", 1)
+              .html(`<strong>${d.data.region}</strong><br>Sales: ${d3.format(",")(d.data.sales)}`)
+              .style("left", (event.pageX + 10) + "px")
+              .style("top", (event.pageY - 20) + "px");
+          })
+
+          .on("mouseout", function() {
+            tooltip.style("opacity", 0);
+          });
+
+        // Add text labels
+        g.selectAll("text")
+          .data(pie(regionSales))
+          .enter()
+          .append("text")
+          .attr("transform", d => `translate(${arc.centroid(d)})`)
+          .attr("text-anchor", "middle")
+          .attr("font-size", "11px")
+          .text(d => d.data.region);
+      }
+
+      // =======================================================
+      // 9) DRAW LINE CHART: MONTHLY SALES TREND
+      // =======================================================
+      function drawLineChart(filteredData) {
+        const svg = d3.select("#lineChart");
+        svg.selectAll("*").remove();
+
+        const margin = { top: 20, right: 30, bottom: 50, left: 60 };
+        const width = 900 - margin.left - margin.right;
+        const height = 350 - margin.top - margin.bottom;
+
+        const g = svg.append("g")
+          .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // -------------------------------------------------------
+        // GROUP DATA BY MONTH
+        // -------------------------------------------------------
+        // d3.timeMonth(d.date) rounds each date to the month level
+        const monthlySalesMap = d3.rollup(
+          filteredData,
+          v => d3.sum(v, d => d.sales),
+          d => d3.timeMonth(d.date)
+        );
+
+        // Convert map to array of objects
+        const monthlySales = Array.from(
+          monthlySalesMap,
+          ([month, sales]) => ({ month, sales })
+        ).sort((a, b) => a.month - b.month);
+
+        // -------------------------------------------------------
+        // X SCALE: TIME
+        // -------------------------------------------------------
+        const x = d3.scaleTime()
+          .domain(d3.extent(monthlySales, d => d.month))
+          .range([0, width]);
+
+        // -------------------------------------------------------
+        // Y SCALE: SALES
+        // -------------------------------------------------------
+        const y = d3.scaleLinear()
+          .domain([0, d3.max(monthlySales, d => d.sales) || 0])
+          .nice()
+          .range([height, 0]);
+
+        // -------------------------------------------------------
+        // LINE GENERATOR
+        // -------------------------------------------------------
+        // Converts data points into SVG path coordinates
+        const line = d3.line()
+          .x(d => x(d.month))
+          .y(d => y(d.sales));
+
+        // Draw x-axis
+        g.append("g")
+          .attr("class", "axis")
+          .attr("transform", `translate(0,${height})`)
+          .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat("%b %Y")));
+
+        // Draw y-axis
+        g.append("g")
+          .attr("class", "axis")
+          .call(d3.axisLeft(y));
+
+        // Draw line
+        g.append("path")
+          .datum(monthlySales)
+          .attr("fill", "none")
+          .attr("stroke", "green")
+          .attr("stroke-width", 3)
+          .attr("d", line);
+
+        // Draw points on the line
+        g.selectAll("circle")
+          .data(monthlySales)
+          .enter()
+          .append("circle")
+          .attr("cx", d => x(d.month))
+          .attr("cy", d => y(d.sales))
+          .attr("r", 5)
+          .attr("fill", "green")
+
+          .on("mouseover", function(event, d) {
+            tooltip
+              .style("opacity", 1)
+              .html(`<strong>${d3.timeFormat("%b %Y")(d.month)}</strong><br>Sales: ${d3.format(",")(d.sales)}`)
+              .style("left", (event.pageX + 10) + "px")
+              .style("top", (event.pageY - 20) + "px");
+          })
+
+          .on("mouseout", function() {
+            tooltip.style("opacity", 0);
+          });
+      }
+
+      // =======================================================
+      // 10) LISTEN FOR DROPDOWN CHANGE
+      // =======================================================
+      // Whenever the dropdown changes, redraw dashboard
+      regionFilter.on("change", function() {
+        updateDashboard(this.value);
+      });
+
+      // =======================================================
+      // 11) INITIAL DRAW
+      // =======================================================
+      // When page first loads, show all data
+      updateDashboard("All");
+
+    }).catch(error => {
+      // If CSV cannot be loaded, show error
+      console.error("Error loading CSV:", error);
+      alert("Could not load sales_data.csv. Please run this using a local server.");
+    });
+  </script>
+</body>
+</html>

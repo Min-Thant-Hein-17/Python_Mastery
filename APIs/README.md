@@ -29,14 +29,14 @@ There are 7 types of API:
 
 2.SOAP API
 
-3. 
+3.GraphQL API
 
-4. 
+4.WebSocket API
 
-5. 
+5.Open API 
 
-6. 
+6.Private API 
 
-7. 
+7.Partner API   
 
 

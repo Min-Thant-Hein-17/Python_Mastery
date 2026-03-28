@@ -19,4 +19,24 @@ APIs:
 
 6.Federation Api
 
+###############
+
+Reference: https://www.facebook.com/photo?fbid=122196999416767348&set=pcb.122196999836767348&locale=th_TH 
+
+There are 7 types of API: 
+
+1.REST API
+
+2.SOAP API
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
 

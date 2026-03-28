@@ -25,18 +25,18 @@ Reference: https://www.facebook.com/photo?fbid=122196999416767348&set=pcb.122196
 
 There are 7 types of API: 
 
-1.REST API
+1.REST API:  Stateless Web Communication
 
-2.SOAP API
+2.SOAP API: Strict Protocol Messaging 
 
-3.GraphQL API
+3.GraphQL API: Flexible Data Queries
 
-4.WebSocket API
+4.WebSocket API: Real-time Communication
 
-5.Open API 
+5.Open API: Available for everyone 
 
-6.Private API 
+6.Private API: Internal Company Use 
 
-7.Partner API   
+7.Partner API: Shared With Partners 
 
 

@@ -1,0 +1,241 @@
+date,country,state_region,township,site,population_group,sector,subsector,partner,delivery_channel,urgency,severity,people_in_need,people_reached,funding_required_usd,funding_received_usd,incidents_reported,access_constraint,latitude,longitude
+2025-06-15,Myanmar,Sagaing,Kale,Kale Site 1,Returnees,Protection,Child Protection,Community Network,Camp Distribution,Low,2,916,764,21817.92,10558.64,1,Security Incident,23.0749,94.1271
+2025-02-01,Thailand,Tak,Mae Sot,Mae Sot Site 3,Host Community,Food Security,Nutrition Support,UN Agency A,School-Based,Medium,2,2613,1635,123055.19,79721.14,3,Road Closure,16.6079,98.6527
+2026-02-02,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 2,Refugees,Education,Temporary Learning,UN Agency A,School-Based,Medium,3,804,494,20705.59,11496.44,1,Administrative Delay,14.5408,98.8219
+2025-08-04,Myanmar,Rakhine,Buthidaung,Buthidaung Site 3,Returnees,Education,School Supplies,Community Network,Cash Transfer,High,3,440,183,22426.86,16557.24,4,Administrative Delay,20.8842,92.6234
+2026-02-25,Thailand,Chiang Mai,Chiang Dao,Chiang Dao Site 1,Host Community,WASH,Clean Water,Community Network,Mobile Team,Medium,3,524,320,13529.27,7995.62,3,None,19.3393,99.0072
+2025-03-12,Thailand,Chiang Mai,Chiang Dao,Chiang Dao Site 4,Refugees,Food Security,Food Basket,INGO Bridge,Camp Distribution,Medium,2,1795,1067,63462.08,43776.44,2,Administrative Delay,19.3464,98.9328
+2025-12-20,Myanmar,Sagaing,Kale,Kale Site 4,Host Community,Health,Maternal Health,Border Aid Alliance,Cash Transfer,Low,1,1638,1053,73118.4,49133.46,2,Administrative Delay,23.2548,94.0242
+2025-11-11,Myanmar,Rakhine,Sittwe,Sittwe Site 3,Returnees,Protection,GBV Support,Medical Relief Hub,Mobile Team,Low,2,648,527,34212.14,21799.06,1,Security Incident,20.1736,92.8141
+2025-09-22,Myanmar,Shan,Kengtung,Kengtung Site 1,Conflict-Affected Villages,WASH,Sanitation Repair,UN Agency A,Door-to-Door,High,4,566,262,16121.35,13492.07,3,Administrative Delay,21.2668,99.6623
+2025-04-10,Myanmar,Sagaing,Kale,Kale Site 4,Returnees,Education,Temporary Learning,UN Agency A,Clinic Outreach,Medium,3,1188,655,34050.16,15936.28,1,None,23.2561,93.978
+2025-11-16,Myanmar,Sagaing,Kale,Kale Site 6,IDPs,Shelter,Camp Repair,INGO Bridge,Cash Transfer,Critical,5,438,133,11154.21,8334.93,6,Administrative Delay,23.1459,94.0844
+2026-02-17,Myanmar,Sagaing,Kale,Kale Site 5,Refugees,Health,Primary Care,Border Aid Alliance,Door-to-Door,Low,1,1486,1111,80084.92,43693.82,1,Road Closure,23.2883,93.9674
+2026-03-04,Myanmar,Rakhine,Buthidaung,Buthidaung Site 5,Conflict-Affected Villages,Shelter,Camp Repair,INGO Bridge,School-Based,Medium,3,1032,551,48604.89,20521.08,1,None,20.8316,92.5233
+2025-12-16,Thailand,Tak,Phop Phra,Phop Phra Site 1,IDPs,Protection,GBV Support,Community Network,Mobile Team,High,4,605,301,24482.96,22399.48,2,Security Incident,16.3936,98.6426
+2025-05-13,Myanmar,Sagaing,Monywa,Monywa Site 3,IDPs,Education,Temporary Learning,Medical Relief Hub,Mobile Team,Medium,2,1306,931,36986.74,34083.37,4,None,22.0967,95.1075
+2025-09-07,Myanmar,Shan,Taunggyi,Taunggyi Site 4,Returnees,Shelter,Emergency Shelter,Local CSO One,Clinic Outreach,Low,2,937,659,44343.12,29149.28,1,None,20.8328,97.1519
+2026-02-08,Myanmar,Rakhine,Sittwe,Sittwe Site 2,Returnees,Food Security,Cash Assistance,Border Aid Alliance,Clinic Outreach,Medium,3,2699,1608,57767.95,52742.71,2,Security Incident,20.0899,92.7879
+2026-02-15,Thailand,Tak,Phop Phra,Phop Phra Site 1,Host Community,Health,Maternal Health,Community Network,Cash Transfer,Critical,4,2225,727,58993.34,42646.21,4,Security Incident,16.5855,98.6127
+2025-09-29,Myanmar,Kachin,Bhamo,Bhamo Site 3,IDPs,WASH,Clean Water,UN Agency A,Mobile Team,High,3,2111,1015,87110.57,74110.92,5,None,24.25,97.156
+2025-09-17,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 6,Refugees,Shelter,NFIs,UN Agency A,Camp Distribution,Low,2,1579,1335,78185.03,40590.54,2,None,19.2639,98.0482
+2025-05-31,Myanmar,Sagaing,Monywa,Monywa Site 3,Returnees,WASH,Sanitation Repair,Local CSO One,Camp Distribution,Low,2,1880,1393,78264.23,36830.21,1,Road Closure,22.0345,95.1203
+2025-01-03,Myanmar,Kachin,Myitkyina,Myitkyina Site 4,IDPs,WASH,Hygiene Kits,Border Aid Alliance,Camp Distribution,Low,1,1864,1464,37388.18,31823.84,2,Weather,25.2978,97.4208
+2025-11-18,Thailand,Mae Hong Son,Khun Yuam,Khun Yuam Site 1,Conflict-Affected Villages,Education,Teacher Support,Border Aid Alliance,Door-to-Door,Medium,2,1196,719,24382.46,8809.49,1,Road Closure,18.8855,97.9502
+2025-05-06,Thailand,Chiang Mai,Fang,Fang Site 5,Conflict-Affected Villages,Health,Vaccination,Community Network,Mobile Team,High,3,1267,565,61508.82,38517.07,6,Weather,19.9064,99.1135
+2025-02-09,Thailand,Chiang Mai,Fang,Fang Site 1,Conflict-Affected Villages,Food Security,Cash Assistance,Local CSO One,Door-to-Door,High,3,2262,1182,114304.97,86348.79,4,None,19.9448,99.251
+2025-09-22,Thailand,Kanchanaburi,Thong Pha Phum,Thong Pha Phum Site 5,Refugees,WASH,Clean Water,Medical Relief Hub,Mobile Team,Medium,3,1695,931,76833.0,33425.77,5,Road Closure,14.7353,98.5413
+2025-07-04,Myanmar,Kachin,Myitkyina,Myitkyina Site 4,Host Community,Health,Primary Care,UN Agency A,Cash Transfer,High,3,996,549,18009.52,14415.55,5,Weather,25.4321,97.3355
+2025-03-03,Myanmar,Rakhine,Buthidaung,Buthidaung Site 4,Host Community,Protection,Child Protection,Local CSO One,Cash Transfer,High,3,801,455,23804.33,12126.8,3,Road Closure,20.8163,92.5026
+2025-04-08,Thailand,Kanchanaburi,Sangkhla Buri,Sangkhla Buri Site 5,Conflict-Affected Villages,Food Security,Nutrition Support,UN Agency A,Mobile Team,Critical,5,417,151,10852.78,5599.46,6,Weather,15.2302,98.485
+2026-01-14,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 6,Host Community,Health,Primary Care,Border Aid Alliance,Camp Distribution,Low,2,1659,1083,44864.56,18144.52,0,None,14.3765,98.8511
+2025-02-16,Thailand,Mae Hong Son,Pai,Pai Site 1,Host Community,Shelter,NFIs,Border Aid Alliance,School-Based,Medium,3,842,447,35077.38,25528.48,5,Weather,19.3003,98.4574
+2025-04-21,Myanmar,Kachin,Myitkyina,Myitkyina Site 4,Returnees,Health,Primary Care,UN Agency A,Cash Transfer,High,3,454,249,26425.86,24664.44,6,None,25.3556,97.435
+2025-02-25,Myanmar,Shan,Taunggyi,Taunggyi Site 6,Host Community,Health,Vaccination,UN Agency A,Mobile Team,High,4,839,404,45222.66,18526.23,2,None,20.7887,97.077
+2025-10-26,Myanmar,Sagaing,Shwebo,Shwebo Site 1,Conflict-Affected Villages,WASH,Hygiene Kits,Local CSO One,Clinic Outreach,High,3,1896,984,39056.67,18218.73,4,Weather,22.5004,95.7243
+2025-11-28,Thailand,Tak,Tha Song Yang,Tha Song Yang Site 3,Refugees,Shelter,Emergency Shelter,Border Aid Alliance,Clinic Outreach,High,3,1167,576,32262.03,30065.48,1,None,17.3514,98.0318
+2026-02-24,Myanmar,Shan,Lashio,Lashio Site 3,IDPs,Protection,GBV Support,Community Network,Camp Distribution,Critical,4,772,229,35525.88,18336.82,5,Security Incident,22.8664,97.8125
+2025-04-05,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 1,Refugees,WASH,Clean Water,INGO Bridge,Door-to-Door,Critical,5,2154,753,49802.65,18989.59,2,Administrative Delay,14.5313,98.911
+2025-03-05,Myanmar,Sagaing,Shwebo,Shwebo Site 4,IDPs,Health,Vaccination,Medical Relief Hub,Camp Distribution,Medium,2,1162,744,34460.98,24992.65,0,None,22.6312,95.6541
+2025-07-12,Myanmar,Sagaing,Monywa,Monywa Site 2,IDPs,Protection,GBV Support,Local CSO One,Clinic Outreach,Medium,3,585,370,32681.58,29998.18,4,None,22.1895,95.0282
+2026-02-27,Myanmar,Rakhine,Maungdaw,Maungdaw Site 4,Returnees,Shelter,NFIs,INGO Bridge,Cash Transfer,Medium,2,1250,841,57498.37,37783.95,0,None,20.8684,92.3585
+2025-03-23,Myanmar,Sagaing,Monywa,Monywa Site 5,Returnees,Food Security,Cash Assistance,UN Agency A,Mobile Team,Medium,2,809,485,23466.85,14082.56,2,Security Incident,22.1526,95.1289
+2025-12-12,Myanmar,Rakhine,Maungdaw,Maungdaw Site 3,Returnees,Education,School Supplies,INGO Bridge,Cash Transfer,Medium,2,1209,694,44267.86,41853.9,0,Road Closure,20.7672,92.3828
+2025-04-29,Myanmar,Sagaing,Monywa,Monywa Site 2,Host Community,WASH,Clean Water,Local CSO One,Camp Distribution,Low,1,1094,848,59540.86,44587.37,0,None,22.0213,95.1272
+2025-11-23,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 2,Returnees,Health,Vaccination,Border Aid Alliance,Door-to-Door,Critical,5,1344,429,74428.32,42365.93,7,Road Closure,19.2702,97.8824
+2026-02-12,Thailand,Mae Hong Son,Khun Yuam,Khun Yuam Site 4,Returnees,Shelter,NFIs,Border Aid Alliance,Clinic Outreach,Medium,3,394,283,13828.5,6476.18,3,Security Incident,18.833,97.9705
+2025-04-15,Myanmar,Sagaing,Monywa,Monywa Site 4,Conflict-Affected Villages,WASH,Hygiene Kits,INGO Bridge,Camp Distribution,Low,1,1375,973,35207.28,15951.4,0,None,22.0984,95.2102
+2025-07-16,Thailand,Mae Hong Son,Pai,Pai Site 4,Returnees,Health,Vaccination,Border Aid Alliance,Cash Transfer,Low,1,1327,893,48817.73,32255.61,0,None,19.2687,98.547
+2025-03-05,Myanmar,Shan,Kengtung,Kengtung Site 5,IDPs,Education,School Supplies,UN Agency A,Cash Transfer,High,4,487,235,18799.45,6843.47,4,Security Incident,21.3758,99.5429
+2025-09-08,Thailand,Mae Hong Son,Pai,Pai Site 4,Refugees,Shelter,NFIs,UN Agency A,Mobile Team,Low,2,488,305,11771.89,10633.26,0,None,19.4216,98.5079
+2026-01-04,Myanmar,Rakhine,Buthidaung,Buthidaung Site 2,IDPs,Health,Vaccination,Border Aid Alliance,Door-to-Door,High,4,2100,912,115613.26,105017.31,3,None,20.9615,92.57
+2025-06-29,Thailand,Mae Hong Son,Pai,Pai Site 4,Refugees,WASH,Sanitation Repair,Medical Relief Hub,Camp Distribution,High,4,1557,804,48384.26,26451.41,5,None,19.4535,98.3867
+2026-02-10,Thailand,Tak,Phop Phra,Phop Phra Site 4,Conflict-Affected Villages,Protection,Legal Aid,Border Aid Alliance,Mobile Team,Medium,3,1020,593,55016.8,33855.63,1,None,16.3917,98.8027
+2026-01-16,Myanmar,Kachin,Putao,Putao Site 5,Returnees,Education,Temporary Learning,Border Aid Alliance,Mobile Team,Medium,3,1032,570,50254.37,18261.12,1,None,27.2742,97.4501
+2025-07-01,Thailand,Tak,Phop Phra,Phop Phra Site 5,Returnees,Protection,Child Protection,INGO Bridge,Clinic Outreach,High,3,868,374,19532.45,14315.84,3,Weather,16.4657,98.6505
+2026-02-05,Thailand,Kanchanaburi,Thong Pha Phum,Thong Pha Phum Site 5,Returnees,Protection,Legal Aid,Community Network,Cash Transfer,High,3,990,471,28878.73,11119.11,4,Security Incident,14.8555,98.5264
+2025-01-07,Myanmar,Shan,Lashio,Lashio Site 5,Host Community,Protection,Child Protection,Community Network,Clinic Outreach,Low,1,926,684,48950.66,30422.46,0,None,22.8612,97.7759
+2025-02-23,Thailand,Mae Hong Son,Khun Yuam,Khun Yuam Site 6,Returnees,Education,Temporary Learning,Local CSO One,Door-to-Door,High,4,1222,532,73956.68,63235.46,4,None,18.7141,97.8943
+2025-03-23,Thailand,Mae Hong Son,Pai,Pai Site 6,Conflict-Affected Villages,Shelter,NFIs,Community Network,Door-to-Door,Low,1,1085,836,48352.61,21900.23,0,None,19.3172,98.3781
+2025-02-27,Myanmar,Shan,Lashio,Lashio Site 1,IDPs,Food Security,Nutrition Support,Border Aid Alliance,Door-to-Door,Low,1,2290,1733,112703.91,98934.73,4,Security Incident,23.0479,97.7982
+2025-12-31,Thailand,Tak,Mae Sot,Mae Sot Site 1,IDPs,Education,Teacher Support,Local CSO One,Cash Transfer,Low,1,773,547,47705.37,18082.47,1,Security Incident,16.6461,98.4736
+2025-06-14,Thailand,Chiang Mai,Chiang Dao,Chiang Dao Site 1,Host Community,Protection,Child Protection,Local CSO One,Cash Transfer,High,4,425,193,22641.61,8657.67,4,None,19.4257,99.0361
+2025-02-18,Thailand,Mae Hong Son,Pai,Pai Site 5,Returnees,Protection,Child Protection,Local CSO One,Camp Distribution,Critical,4,1087,386,70201.09,40330.66,5,Weather,19.3805,98.5504
+2025-07-02,Myanmar,Sagaing,Shwebo,Shwebo Site 4,IDPs,WASH,Clean Water,Local CSO One,Clinic Outreach,Medium,3,1859,1213,86353.15,31979.2,3,Road Closure,22.6607,95.7589
+2025-09-25,Myanmar,Sagaing,Kale,Kale Site 4,Host Community,Education,School Supplies,Community Network,Camp Distribution,Low,2,743,623,18772.59,8327.36,3,None,23.1962,94.0076
+2025-06-17,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 6,IDPs,Food Security,Nutrition Support,UN Agency A,Camp Distribution,Medium,3,1754,1229,54720.95,48217.3,2,Road Closure,19.2604,97.8939
+2025-01-07,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 3,Host Community,Health,Primary Care,Local CSO One,School-Based,High,4,1553,806,92011.41,67629.8,2,Road Closure,14.3726,98.9705
+2025-04-28,Myanmar,Rakhine,Maungdaw,Maungdaw Site 6,IDPs,Shelter,Emergency Shelter,Medical Relief Hub,Door-to-Door,High,4,531,253,26410.09,23983.49,4,None,20.8005,92.3091
+2025-12-02,Thailand,Tak,Tha Song Yang,Tha Song Yang Site 1,IDPs,WASH,Sanitation Repair,INGO Bridge,Camp Distribution,High,3,646,319,31037.25,26300.69,3,Road Closure,17.4963,98.148
+2025-07-30,Thailand,Mae Hong Son,Khun Yuam,Khun Yuam Site 1,Conflict-Affected Villages,WASH,Sanitation Repair,UN Agency A,Clinic Outreach,Medium,2,953,624,32926.03,16762.46,2,None,18.7489,97.9371
+2026-01-15,Thailand,Mae Hong Son,Pai,Pai Site 1,Refugees,Shelter,Camp Repair,Community Network,Door-to-Door,Medium,3,1591,1025,86952.6,54922.82,1,Security Incident,19.3492,98.3602
+2025-04-28,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 2,Host Community,Health,Vaccination,Local CSO One,Clinic Outreach,Medium,3,661,427,23157.66,21009.46,2,Weather,14.3801,98.8374
+2025-01-30,Myanmar,Kachin,Myitkyina,Myitkyina Site 5,IDPs,Education,Temporary Learning,INGO Bridge,Mobile Team,High,3,1035,561,28774.47,17019.83,5,Road Closure,25.3907,97.3628
+2025-11-09,Myanmar,Kachin,Myitkyina,Myitkyina Site 1,Host Community,Education,Temporary Learning,Community Network,Mobile Team,Medium,2,560,391,28515.1,14198.81,1,None,25.382,97.3311
+2025-11-03,Myanmar,Shan,Lashio,Lashio Site 6,Returnees,Shelter,NFIs,Medical Relief Hub,Cash Transfer,Critical,4,1106,427,71837.29,48378.09,6,Administrative Delay,22.9256,97.765
+2025-09-06,Myanmar,Rakhine,Sittwe,Sittwe Site 3,IDPs,Education,School Supplies,Local CSO One,Cash Transfer,High,4,546,300,17343.96,14684.1,4,None,20.1986,92.9285
+2025-09-15,Thailand,Chiang Mai,Fang,Fang Site 3,Refugees,WASH,Sanitation Repair,Local CSO One,Camp Distribution,High,4,1249,572,22846.59,10600.01,3,Administrative Delay,19.9538,99.2868
+2025-11-08,Myanmar,Sagaing,Kale,Kale Site 6,Conflict-Affected Villages,Education,Temporary Learning,INGO Bridge,Mobile Team,High,3,1124,476,69389.14,24845.19,2,Weather,23.0986,94.0917
+2025-03-13,Thailand,Chiang Mai,Mae Ai,Mae Ai Site 1,Host Community,Protection,Legal Aid,Community Network,Mobile Team,Medium,2,660,387,30242.93,27600.65,2,Administrative Delay,19.9243,99.1882
+2025-09-01,Thailand,Tak,Mae Sot,Mae Sot Site 2,IDPs,Shelter,Emergency Shelter,UN Agency A,Door-to-Door,High,3,723,365,28331.84,22567.0,4,Administrative Delay,16.7514,98.4976
+2025-07-07,Myanmar,Rakhine,Maungdaw,Maungdaw Site 4,Returnees,Health,Vaccination,UN Agency A,Mobile Team,Low,1,1167,984,47680.63,18398.4,0,None,20.8476,92.4169
+2025-10-22,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 1,Returnees,Education,Temporary Learning,Border Aid Alliance,Cash Transfer,Medium,3,817,526,45499.51,32302.0,3,Weather,14.3592,98.967
+2026-01-07,Myanmar,Shan,Kengtung,Kengtung Site 2,Host Community,Shelter,Camp Repair,Medical Relief Hub,School-Based,High,4,879,380,53854.59,43514.21,4,Security Incident,21.3798,99.637
+2025-05-28,Myanmar,Shan,Lashio,Lashio Site 5,Host Community,WASH,Sanitation Repair,UN Agency A,School-Based,High,3,822,400,22777.25,11453.33,2,Security Incident,23.0474,97.8213
+2026-02-10,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 1,Refugees,Shelter,Camp Repair,Community Network,Clinic Outreach,Critical,4,1035,409,32727.15,19019.27,6,Security Incident,14.3402,98.9287
+2025-05-07,Myanmar,Sagaing,Shwebo,Shwebo Site 4,IDPs,Food Security,Cash Assistance,Community Network,Mobile Team,Medium,2,3061,1864,136697.05,69299.68,1,Security Incident,22.6546,95.6692
+2025-08-07,Myanmar,Sagaing,Kale,Kale Site 3,IDPs,WASH,Clean Water,INGO Bridge,Cash Transfer,Low,1,456,388,26703.18,19597.6,1,Administrative Delay,23.2598,94.1612
+2025-12-28,Myanmar,Kachin,Bhamo,Bhamo Site 6,Conflict-Affected Villages,Shelter,Emergency Shelter,Medical Relief Hub,Camp Distribution,Medium,2,1777,918,78158.22,28658.4,0,Administrative Delay,24.2655,97.2671
+2025-05-13,Thailand,Tak,Mae Sot,Mae Sot Site 2,Returnees,Protection,Legal Aid,Medical Relief Hub,Door-to-Door,Low,2,899,593,26257.54,11445.39,2,Security Incident,16.6315,98.6279
+2025-01-07,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 1,Conflict-Affected Villages,WASH,Sanitation Repair,INGO Bridge,Cash Transfer,Critical,5,1825,590,42766.48,21229.83,5,Road Closure,19.2194,98.0484
+2025-04-03,Thailand,Mae Hong Son,Pai,Pai Site 4,Refugees,Food Security,Food Basket,Local CSO One,School-Based,High,4,2337,1144,58911.9,38768.42,4,Security Incident,19.4473,98.3846
+2026-02-08,Myanmar,Sagaing,Shwebo,Shwebo Site 3,Host Community,WASH,Clean Water,INGO Bridge,Mobile Team,Medium,2,1831,1097,76657.09,50323.13,3,None,22.4753,95.7612
+2026-02-09,Thailand,Mae Hong Son,Pai,Pai Site 2,Returnees,Protection,Child Protection,INGO Bridge,Camp Distribution,High,3,944,503,50768.46,23109.33,1,None,19.3428,98.5396
+2025-12-09,Myanmar,Kachin,Myitkyina,Myitkyina Site 5,Host Community,Education,Temporary Learning,Community Network,Clinic Outreach,Medium,2,1202,832,36678.07,16931.75,1,Weather,25.2657,97.4461
+2025-07-07,Myanmar,Shan,Kengtung,Kengtung Site 1,Returnees,Protection,GBV Support,Community Network,Mobile Team,Low,1,669,541,26079.38,9529.02,1,Weather,21.2691,99.6395
+2025-03-10,Myanmar,Shan,Taunggyi,Taunggyi Site 1,Returnees,WASH,Sanitation Repair,UN Agency A,Mobile Team,Low,1,644,414,37910.82,29580.25,0,None,20.717,96.9571
+2025-03-05,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 1,IDPs,Shelter,Emergency Shelter,Community Network,School-Based,Medium,2,1335,943,48421.79,29163.98,4,Weather,14.4394,98.8022
+2025-09-27,Myanmar,Sagaing,Monywa,Monywa Site 2,Returnees,Education,School Supplies,Community Network,Clinic Outreach,High,3,901,464,31650.6,21157.76,5,None,22.1832,95.0946
+2025-08-10,Myanmar,Rakhine,Sittwe,Sittwe Site 4,IDPs,Health,Primary Care,Border Aid Alliance,School-Based,Medium,2,1250,693,24815.86,10368.72,2,None,20.0597,93.0111
+2025-03-27,Myanmar,Rakhine,Buthidaung,Buthidaung Site 3,IDPs,Shelter,Camp Repair,Community Network,Camp Distribution,Medium,3,913,606,28756.64,17900.57,4,Security Incident,20.9769,92.6344
+2025-04-24,Thailand,Mae Hong Son,Khun Yuam,Khun Yuam Site 5,Returnees,Protection,GBV Support,Medical Relief Hub,Clinic Outreach,Low,2,941,809,24115.8,22216.61,0,None,18.8753,97.9244
+2025-06-16,Thailand,Chiang Mai,Mae Ai,Mae Ai Site 1,IDPs,Food Security,Nutrition Support,UN Agency A,School-Based,Critical,5,1149,413,74107.53,46025.5,7,Administrative Delay,20.0908,99.2319
+2025-08-02,Thailand,Chiang Mai,Fang,Fang Site 3,Conflict-Affected Villages,Health,Vaccination,Border Aid Alliance,Cash Transfer,Medium,3,751,397,27548.33,26053.96,2,None,19.9588,99.2446
+2026-02-06,Thailand,Tak,Tha Song Yang,Tha Song Yang Site 3,Returnees,WASH,Hygiene Kits,Medical Relief Hub,School-Based,High,3,1097,547,61145.43,37383.55,4,None,17.5011,98.0962
+2025-04-29,Myanmar,Kachin,Bhamo,Bhamo Site 2,Returnees,Food Security,Cash Assistance,UN Agency A,Mobile Team,Low,2,1044,831,37904.85,21402.11,0,Road Closure,24.3625,97.2592
+2025-06-29,Thailand,Tak,Phop Phra,Phop Phra Site 4,Returnees,Protection,GBV Support,Border Aid Alliance,School-Based,Critical,5,359,146,16373.25,10259.99,7,Security Incident,16.3964,98.6517
+2025-02-17,Myanmar,Kachin,Bhamo,Bhamo Site 3,Conflict-Affected Villages,Food Security,Food Basket,Border Aid Alliance,Clinic Outreach,High,4,1393,609,66327.16,47216.75,3,None,24.218,97.1313
+2025-11-20,Myanmar,Sagaing,Monywa,Monywa Site 6,Conflict-Affected Villages,Health,Maternal Health,Medical Relief Hub,Mobile Team,High,3,1264,704,75955.71,50024.55,2,None,22.1857,95.0869
+2025-04-12,Thailand,Tak,Mae Sot,Mae Sot Site 1,IDPs,Health,Primary Care,INGO Bridge,School-Based,Medium,3,979,523,28585.19,14729.05,0,None,16.6343,98.629
+2025-11-18,Myanmar,Rakhine,Maungdaw,Maungdaw Site 1,IDPs,Food Security,Cash Assistance,Community Network,Mobile Team,Medium,2,2251,1218,41170.06,35825.86,3,Road Closure,20.7427,92.3965
+2025-08-03,Thailand,Kanchanaburi,Sangkhla Buri,Sangkhla Buri Site 6,Conflict-Affected Villages,Food Security,Cash Assistance,Local CSO One,Cash Transfer,Critical,4,2074,658,132036.5,61566.01,7,Road Closure,15.0936,98.4272
+2025-02-28,Thailand,Kanchanaburi,Thong Pha Phum,Thong Pha Phum Site 1,Host Community,WASH,Sanitation Repair,INGO Bridge,Cash Transfer,Medium,3,2106,1216,53338.64,41258.65,2,None,14.7202,98.5286
+2025-05-19,Myanmar,Sagaing,Shwebo,Shwebo Site 2,Returnees,WASH,Clean Water,Border Aid Alliance,Cash Transfer,Medium,3,1476,785,75577.46,38276.65,3,Weather,22.6474,95.7732
+2025-10-28,Thailand,Mae Hong Son,Pai,Pai Site 1,Conflict-Affected Villages,Health,Vaccination,Local CSO One,Door-to-Door,High,3,1858,978,101221.02,49490.89,4,None,19.3843,98.3717
+2025-02-25,Myanmar,Kachin,Putao,Putao Site 6,Returnees,Health,Primary Care,Local CSO One,Camp Distribution,High,4,1462,753,69511.05,60325.73,2,Administrative Delay,27.3953,97.343
+2025-04-01,Myanmar,Kachin,Putao,Putao Site 4,IDPs,Education,Teacher Support,Border Aid Alliance,Cash Transfer,Medium,3,835,530,23632.18,17876.59,3,None,27.4052,97.4625
+2025-11-08,Myanmar,Sagaing,Monywa,Monywa Site 6,IDPs,Protection,GBV Support,Border Aid Alliance,Door-to-Door,Critical,5,545,224,12675.6,8308.62,4,Security Incident,22.1784,95.0508
+2025-01-22,Myanmar,Shan,Kengtung,Kengtung Site 2,Returnees,Education,Temporary Learning,Medical Relief Hub,Door-to-Door,High,3,1212,688,61213.47,48552.47,3,Weather,21.2067,99.6866
+2025-11-18,Thailand,Tak,Phop Phra,Phop Phra Site 5,Refugees,Shelter,Emergency Shelter,UN Agency A,Door-to-Door,High,3,744,309,25904.45,15464.51,3,None,16.5476,98.6995
+2025-06-09,Myanmar,Shan,Kengtung,Kengtung Site 2,Refugees,Health,Vaccination,Border Aid Alliance,Cash Transfer,Low,2,934,730,21990.7,13299.56,0,Administrative Delay,21.3497,99.6576
+2025-12-13,Myanmar,Sagaing,Shwebo,Shwebo Site 3,IDPs,WASH,Hygiene Kits,INGO Bridge,Mobile Team,Low,2,1240,800,41230.15,26024.29,0,None,22.6462,95.6075
+2025-03-28,Myanmar,Rakhine,Sittwe,Sittwe Site 4,IDPs,Education,Teacher Support,Local CSO One,Door-to-Door,High,4,1045,425,63974.02,47129.92,5,Security Incident,20.1386,93.0136
+2026-01-10,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 4,Refugees,WASH,Hygiene Kits,INGO Bridge,Door-to-Door,High,4,886,414,25535.07,11026.19,5,Administrative Delay,19.215,97.8551
+2026-03-05,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 6,Host Community,Health,Primary Care,Medical Relief Hub,Cash Transfer,Medium,3,1104,662,70193.64,28343.96,1,None,19.1916,97.9845
+2025-08-14,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 5,Conflict-Affected Villages,Shelter,Emergency Shelter,Local CSO One,Mobile Team,High,3,1873,817,97514.62,56294.57,4,None,19.3552,97.8492
+2026-02-16,Thailand,Mae Hong Son,Pai,Pai Site 4,Host Community,Protection,Legal Aid,INGO Bridge,Cash Transfer,Critical,5,464,157,22668.9,9175.03,5,Weather,19.2587,98.3984
+2025-09-29,Myanmar,Shan,Taunggyi,Taunggyi Site 1,Refugees,Education,Teacher Support,Local CSO One,School-Based,High,3,776,339,46427.84,31518.39,4,None,20.8262,97.0207
+2026-03-05,Thailand,Tak,Mae Sot,Mae Sot Site 4,Refugees,Protection,GBV Support,INGO Bridge,School-Based,High,4,740,365,30961.63,26414.27,3,Administrative Delay,16.7241,98.5071
+2025-11-17,Myanmar,Sagaing,Kale,Kale Site 2,Conflict-Affected Villages,Shelter,Emergency Shelter,INGO Bridge,Clinic Outreach,High,3,957,487,26812.54,14209.52,4,Security Incident,23.1574,93.9711
+2025-08-07,Myanmar,Shan,Kengtung,Kengtung Site 3,Refugees,WASH,Sanitation Repair,Local CSO One,Door-to-Door,High,3,804,376,32949.88,27675.5,3,None,21.2075,99.6715
+2025-07-02,Thailand,Tak,Mae Sot,Mae Sot Site 3,Returnees,Food Security,Nutrition Support,Medical Relief Hub,Mobile Team,High,3,2669,1169,117568.31,61608.26,5,Security Incident,16.8188,98.6088
+2025-07-14,Myanmar,Kachin,Putao,Putao Site 3,Host Community,Health,Primary Care,Local CSO One,Camp Distribution,Medium,2,1520,989,55404.82,35207.23,4,None,27.4526,97.4794
+2025-08-18,Thailand,Mae Hong Son,Khun Yuam,Khun Yuam Site 5,Refugees,WASH,Clean Water,Community Network,School-Based,Low,1,970,688,17733.0,12368.71,0,None,18.8289,97.9004
+2025-01-11,Myanmar,Sagaing,Kale,Kale Site 6,Refugees,WASH,Hygiene Kits,Local CSO One,Mobile Team,High,3,2310,976,63211.92,38290.7,2,Road Closure,23.0742,93.965
+2025-02-20,Thailand,Chiang Mai,Fang,Fang Site 6,IDPs,WASH,Hygiene Kits,Border Aid Alliance,Clinic Outreach,High,4,1812,837,116793.87,74617.24,4,None,20.0062,99.322
+2025-05-05,Myanmar,Kachin,Myitkyina,Myitkyina Site 6,Host Community,Shelter,NFIs,Medical Relief Hub,School-Based,High,3,949,479,46469.12,43192.61,2,None,25.2958,97.2817
+2025-04-08,Myanmar,Shan,Lashio,Lashio Site 3,Host Community,Education,Temporary Learning,Medical Relief Hub,Clinic Outreach,Critical,4,737,218,14918.08,7894.16,5,Weather,22.9526,97.867
+2025-05-25,Myanmar,Shan,Taunggyi,Taunggyi Site 5,IDPs,Health,Primary Care,Community Network,Clinic Outreach,High,4,593,262,19780.85,15816.66,1,Security Incident,20.8394,97.1445
+2025-07-27,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 1,Conflict-Affected Villages,WASH,Hygiene Kits,Community Network,Cash Transfer,Medium,2,80,41,3748.52,2940.64,0,None,19.3889,98.0396
+2025-02-17,Myanmar,Shan,Taunggyi,Taunggyi Site 1,Returnees,WASH,Hygiene Kits,Local CSO One,School-Based,High,3,1616,664,78252.21,57983.67,2,Road Closure,20.6975,97.0974
+2025-12-28,Thailand,Chiang Mai,Mae Ai,Mae Ai Site 2,Returnees,Health,Vaccination,Medical Relief Hub,Mobile Team,High,3,1207,495,29335.8,11326.55,3,Road Closure,20.0056,99.4058
+2025-10-12,Myanmar,Kachin,Putao,Putao Site 2,Refugees,Protection,Child Protection,Local CSO One,Door-to-Door,Medium,2,490,342,11302.73,8929.51,2,None,27.301,97.3325
+2025-11-27,Thailand,Chiang Mai,Fang,Fang Site 4,Refugees,Health,Maternal Health,UN Agency A,Clinic Outreach,High,4,996,452,59095.42,38362.43,5,Administrative Delay,19.8514,99.1869
+2026-02-09,Myanmar,Sagaing,Shwebo,Shwebo Site 3,Returnees,Health,Maternal Health,UN Agency A,Cash Transfer,Critical,5,1232,483,71472.38,46042.72,6,Administrative Delay,22.6757,95.6128
+2025-04-04,Thailand,Mae Hong Son,Pai,Pai Site 2,IDPs,Food Security,Cash Assistance,INGO Bridge,School-Based,High,4,2284,1292,118011.45,103752.22,4,Administrative Delay,19.4027,98.5139
+2025-01-17,Myanmar,Shan,Kengtung,Kengtung Site 5,Conflict-Affected Villages,Food Security,Nutrition Support,Medical Relief Hub,Door-to-Door,Low,1,2030,1511,49497.66,30049.28,0,None,21.3455,99.5058
+2025-12-17,Myanmar,Rakhine,Buthidaung,Buthidaung Site 1,Returnees,Food Security,Food Basket,Border Aid Alliance,Mobile Team,Medium,2,1969,1208,73210.87,50074.18,2,None,20.8316,92.5324
+2025-01-06,Thailand,Tak,Phop Phra,Phop Phra Site 3,Host Community,Education,Teacher Support,Local CSO One,Cash Transfer,Medium,3,944,639,56838.78,41548.46,0,None,16.4889,98.6644
+2025-09-14,Thailand,Kanchanaburi,Sangkhla Buri,Sangkhla Buri Site 1,Conflict-Affected Villages,Health,Vaccination,UN Agency A,Cash Transfer,High,4,1217,652,70723.79,46400.29,3,Road Closure,15.2334,98.4928
+2025-07-14,Myanmar,Sagaing,Shwebo,Shwebo Site 5,Returnees,Protection,Legal Aid,Border Aid Alliance,Clinic Outreach,Low,1,841,648,37696.28,35798.15,0,None,22.6176,95.6744
+2026-01-23,Thailand,Mae Hong Son,Khun Yuam,Khun Yuam Site 6,Refugees,Food Security,Nutrition Support,Medical Relief Hub,Camp Distribution,High,4,2373,1014,59872.42,29989.44,1,None,18.7454,97.9016
+2025-07-02,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 4,IDPs,Shelter,Camp Repair,Medical Relief Hub,Door-to-Door,High,3,486,249,20703.19,17202.99,4,None,14.3403,98.83
+2025-10-12,Myanmar,Rakhine,Buthidaung,Buthidaung Site 3,Conflict-Affected Villages,WASH,Hygiene Kits,Local CSO One,Camp Distribution,Medium,2,1553,1048,73052.33,41856.89,3,None,20.809,92.555
+2025-08-15,Thailand,Chiang Mai,Fang,Fang Site 4,Host Community,Education,Teacher Support,Local CSO One,Clinic Outreach,Medium,2,757,393,40525.09,23408.99,0,Road Closure,19.9677,99.1676
+2025-09-12,Myanmar,Rakhine,Buthidaung,Buthidaung Site 6,Host Community,Shelter,NFIs,INGO Bridge,Mobile Team,Medium,2,978,501,48853.6,33333.3,0,Security Incident,20.8819,92.6377
+2026-01-30,Thailand,Tak,Mae Sot,Mae Sot Site 1,IDPs,Shelter,Emergency Shelter,INGO Bridge,School-Based,Medium,3,447,306,10991.88,6531.04,1,None,16.6497,98.4652
+2025-11-17,Myanmar,Kachin,Bhamo,Bhamo Site 2,Conflict-Affected Villages,WASH,Sanitation Repair,Local CSO One,Mobile Team,Medium,3,1223,682,43869.79,26833.5,0,Road Closure,24.1757,97.349
+2025-06-06,Myanmar,Shan,Taunggyi,Taunggyi Site 4,Host Community,Education,Teacher Support,INGO Bridge,Clinic Outreach,Critical,4,894,270,56068.61,38090.47,5,Security Incident,20.7131,97.0698
+2026-02-12,Thailand,Chiang Mai,Fang,Fang Site 5,Conflict-Affected Villages,Shelter,NFIs,Border Aid Alliance,Cash Transfer,Medium,2,1113,593,66064.32,55400.06,1,Road Closure,19.9672,99.2893
+2025-01-08,Myanmar,Sagaing,Monywa,Monywa Site 3,Refugees,Protection,Child Protection,INGO Bridge,Door-to-Door,Medium,3,828,491,40544.99,20457.13,0,Administrative Delay,22.1584,95.1753
+2025-12-18,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 2,Host Community,WASH,Clean Water,Community Network,Clinic Outreach,High,4,1075,613,52968.46,25874.56,3,Administrative Delay,19.4034,97.8805
+2025-06-17,Thailand,Mae Hong Son,Khun Yuam,Khun Yuam Site 6,IDPs,Food Security,Cash Assistance,INGO Bridge,Door-to-Door,Medium,3,1952,1373,126524.82,115600.36,1,Road Closure,18.7747,97.971
+2025-05-29,Thailand,Chiang Mai,Fang,Fang Site 1,Refugees,Shelter,NFIs,Local CSO One,School-Based,High,3,901,498,25838.32,23377.58,6,None,19.9768,99.2159
+2025-11-03,Myanmar,Rakhine,Maungdaw,Maungdaw Site 3,IDPs,Food Security,Cash Assistance,Local CSO One,Cash Transfer,Medium,3,1924,998,85197.09,34709.4,0,Road Closure,20.7433,92.2832
+2026-02-08,Myanmar,Sagaing,Shwebo,Shwebo Site 5,IDPs,Shelter,Camp Repair,Border Aid Alliance,Camp Distribution,Medium,2,672,351,12252.39,9028.27,3,Weather,22.4553,95.5895
+2025-06-05,Myanmar,Kachin,Myitkyina,Myitkyina Site 2,Host Community,WASH,Sanitation Repair,Community Network,Mobile Team,Medium,2,1182,698,32578.92,13887.35,2,None,25.2889,97.3373
+2025-10-01,Myanmar,Rakhine,Sittwe,Sittwe Site 6,Conflict-Affected Villages,Food Security,Nutrition Support,Border Aid Alliance,Camp Distribution,Low,1,1017,655,45542.44,19239.46,1,Security Incident,20.0516,92.7913
+2025-04-22,Myanmar,Shan,Kengtung,Kengtung Site 1,Refugees,Health,Vaccination,Local CSO One,Mobile Team,Low,1,1373,1179,25408.73,23228.28,0,None,21.366,99.6198
+2025-07-28,Myanmar,Rakhine,Sittwe,Sittwe Site 2,Refugees,WASH,Clean Water,INGO Bridge,Camp Distribution,Critical,5,1981,664,42085.92,24889.62,6,Road Closure,20.0617,92.9011
+2025-07-07,Thailand,Tak,Phop Phra,Phop Phra Site 2,Host Community,Education,Teacher Support,Medical Relief Hub,Camp Distribution,Medium,2,359,241,21155.41,11199.31,3,Administrative Delay,16.5522,98.6805
+2025-09-30,Myanmar,Rakhine,Maungdaw,Maungdaw Site 2,Refugees,Protection,GBV Support,Community Network,Camp Distribution,Critical,5,814,248,39614.43,27116.19,4,Administrative Delay,20.8769,92.4501
+2026-02-10,Thailand,Tak,Tha Song Yang,Tha Song Yang Site 1,Host Community,Shelter,NFIs,Community Network,Clinic Outreach,Medium,2,691,353,23344.53,22071.71,2,None,17.4141,97.9339
+2025-08-15,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 4,Refugees,Shelter,NFIs,Local CSO One,Camp Distribution,Medium,3,125,76,8057.74,3736.12,2,Weather,19.2336,97.999
+2025-03-25,Thailand,Tak,Mae Sot,Mae Sot Site 2,Host Community,Protection,Legal Aid,Local CSO One,Door-to-Door,Medium,3,651,415,25306.04,23400.67,1,None,16.8015,98.4716
+2025-12-05,Thailand,Tak,Phop Phra,Phop Phra Site 1,IDPs,Education,Temporary Learning,Community Network,Cash Transfer,Medium,3,862,608,26513.77,12265.16,2,Administrative Delay,16.4995,98.684
+2025-09-18,Myanmar,Sagaing,Monywa,Monywa Site 3,Refugees,WASH,Sanitation Repair,UN Agency A,Cash Transfer,High,4,2149,1130,66708.37,29826.98,3,Road Closure,22.1761,95.1673
+2026-02-27,Myanmar,Kachin,Myitkyina,Myitkyina Site 1,Refugees,WASH,Sanitation Repair,Community Network,Camp Distribution,High,4,1706,784,106377.55,49828.38,3,None,25.3115,97.4738
+2025-08-13,Thailand,Tak,Phop Phra,Phop Phra Site 4,Host Community,WASH,Clean Water,INGO Bridge,School-Based,Medium,2,1875,1135,82989.39,62438.14,3,Security Incident,16.4425,98.6913
+2025-05-21,Thailand,Chiang Mai,Chiang Dao,Chiang Dao Site 3,IDPs,WASH,Hygiene Kits,UN Agency A,Mobile Team,High,4,2413,1347,54367.29,38690.82,3,Weather,19.4669,98.9737
+2026-03-04,Myanmar,Kachin,Myitkyina,Myitkyina Site 6,IDPs,Shelter,NFIs,Border Aid Alliance,Clinic Outreach,Medium,3,954,632,35718.78,32373.77,1,None,25.418,97.5122
+2025-04-20,Thailand,Tak,Tha Song Yang,Tha Song Yang Site 5,Refugees,Protection,GBV Support,Medical Relief Hub,Camp Distribution,High,3,505,249,30412.03,27045.09,1,Security Incident,17.3127,97.9307
+2026-02-25,Thailand,Chiang Mai,Fang,Fang Site 4,Conflict-Affected Villages,WASH,Sanitation Repair,UN Agency A,School-Based,High,3,2011,1157,112011.18,63379.23,5,Security Incident,19.9521,99.3068
+2025-02-06,Myanmar,Kachin,Myitkyina,Myitkyina Site 2,Host Community,WASH,Sanitation Repair,UN Agency A,Cash Transfer,High,4,993,564,62898.38,42042.26,4,None,25.2641,97.431
+2025-10-12,Myanmar,Kachin,Putao,Putao Site 2,IDPs,Protection,GBV Support,Medical Relief Hub,Clinic Outreach,Low,2,229,165,11297.81,9931.58,3,None,27.3422,97.304
+2025-07-10,Thailand,Chiang Mai,Fang,Fang Site 4,Host Community,Education,Teacher Support,Community Network,Cash Transfer,Medium,2,857,568,36218.39,22207.97,2,None,19.9507,99.2348
+2025-12-27,Myanmar,Kachin,Myitkyina,Myitkyina Site 3,IDPs,Education,Teacher Support,Community Network,Door-to-Door,Low,2,1130,919,48899.17,33478.92,0,Security Incident,25.3978,97.4483
+2025-10-17,Thailand,Chiang Mai,Mae Ai,Mae Ai Site 6,Returnees,Shelter,Emergency Shelter,Border Aid Alliance,Cash Transfer,High,3,1067,617,64927.96,53685.68,2,Road Closure,19.9053,99.3574
+2026-02-25,Myanmar,Rakhine,Buthidaung,Buthidaung Site 2,Returnees,WASH,Sanitation Repair,UN Agency A,Camp Distribution,High,3,1452,643,66082.4,38152.29,4,None,20.8819,92.5352
+2026-03-02,Myanmar,Sagaing,Monywa,Monywa Site 1,Returnees,WASH,Sanitation Repair,Community Network,Cash Transfer,Medium,2,1799,947,82371.57,35069.26,1,None,22.0457,95.1508
+2025-08-22,Thailand,Tak,Phop Phra,Phop Phra Site 4,Refugees,Shelter,Camp Repair,Border Aid Alliance,Door-to-Door,Critical,4,1397,421,40812.3,30394.45,4,Administrative Delay,16.5539,98.6096
+2025-10-17,Myanmar,Rakhine,Sittwe,Sittwe Site 1,IDPs,Shelter,Emergency Shelter,Medical Relief Hub,Camp Distribution,Critical,5,1379,488,86814.03,56759.44,6,Weather,20.0487,93.0127
+2025-02-19,Myanmar,Shan,Kengtung,Kengtung Site 1,Conflict-Affected Villages,Shelter,Emergency Shelter,UN Agency A,Mobile Team,High,3,497,250,13817.14,6389.34,4,Road Closure,21.2191,99.6196
+2026-03-05,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 6,Host Community,Health,Vaccination,UN Agency A,School-Based,High,3,1484,682,47337.85,30603.05,4,Road Closure,19.3517,98.025
+2025-06-21,Myanmar,Rakhine,Sittwe,Sittwe Site 6,Conflict-Affected Villages,Food Security,Nutrition Support,Medical Relief Hub,Cash Transfer,Critical,4,1767,671,102395.8,53482.29,5,Weather,20.0442,92.8057
+2025-04-03,Thailand,Kanchanaburi,Thong Pha Phum,Thong Pha Phum Site 3,Returnees,Health,Maternal Health,Medical Relief Hub,Mobile Team,Medium,3,1222,757,41564.5,28113.54,1,None,14.793,98.5735
+2026-02-22,Thailand,Tak,Mae Sot,Mae Sot Site 5,Refugees,Health,Primary Care,Local CSO One,Cash Transfer,High,3,1473,764,63788.43,58223.96,5,None,16.8103,98.6374
+2025-09-23,Myanmar,Shan,Taunggyi,Taunggyi Site 1,Returnees,Shelter,Camp Repair,UN Agency A,Camp Distribution,High,4,514,216,30178.67,22171.74,6,Security Incident,20.7323,97.1309
+2025-12-02,Myanmar,Rakhine,Buthidaung,Buthidaung Site 1,IDPs,Education,Temporary Learning,Community Network,Mobile Team,Low,1,675,572,41359.54,25643.66,0,Weather,20.763,92.5072
+2025-05-11,Thailand,Kanchanaburi,Thong Pha Phum,Thong Pha Phum Site 6,IDPs,Shelter,NFIs,Local CSO One,Camp Distribution,Low,1,865,535,23292.34,20798.48,0,None,14.7906,98.5545
+2025-12-04,Thailand,Chiang Mai,Fang,Fang Site 1,Host Community,WASH,Sanitation Repair,UN Agency A,School-Based,High,4,1269,721,44037.31,29738.78,7,None,19.8077,99.2122
+2025-07-09,Thailand,Chiang Mai,Mae Ai,Mae Ai Site 2,Refugees,WASH,Hygiene Kits,UN Agency A,Camp Distribution,High,4,1050,585,21395.65,16007.83,2,Weather,19.9199,99.3392
+2025-05-01,Thailand,Tak,Tha Song Yang,Tha Song Yang Site 4,Conflict-Affected Villages,Education,School Supplies,UN Agency A,Cash Transfer,Low,2,752,476,26300.18,16608.57,1,Administrative Delay,17.4019,97.9578
+2025-10-12,Myanmar,Rakhine,Buthidaung,Buthidaung Site 5,Conflict-Affected Villages,Shelter,Emergency Shelter,UN Agency A,Cash Transfer,High,4,1320,643,82461.56,67703.93,4,None,20.8001,92.5919
+2026-02-18,Thailand,Chiang Mai,Fang,Fang Site 3,IDPs,Health,Vaccination,Medical Relief Hub,Cash Transfer,Medium,2,901,551,41834.91,30986.35,1,None,19.846,99.2558
+2026-02-16,Thailand,Tak,Tha Song Yang,Tha Song Yang Site 6,Refugees,Health,Vaccination,Medical Relief Hub,Door-to-Door,Low,1,1993,1387,65289.1,30660.68,0,None,17.4542,98.0862
+2025-01-13,Myanmar,Rakhine,Maungdaw,Maungdaw Site 4,Returnees,Protection,Legal Aid,Medical Relief Hub,Door-to-Door,Critical,4,542,177,34591.53,22564.64,8,Security Incident,20.9243,92.3026
+2025-06-25,Thailand,Tak,Phop Phra,Phop Phra Site 1,Refugees,Protection,GBV Support,Community Network,Cash Transfer,Medium,2,518,307,31487.83,29884.66,1,None,16.4697,98.6356
+2025-06-14,Myanmar,Shan,Taunggyi,Taunggyi Site 4,Host Community,WASH,Sanitation Repair,Border Aid Alliance,Camp Distribution,Critical,4,566,235,34235.27,12948.25,7,Security Incident,20.7648,96.9326
+2025-03-31,Myanmar,Sagaing,Monywa,Monywa Site 6,Conflict-Affected Villages,Protection,Child Protection,Medical Relief Hub,Camp Distribution,Medium,2,543,318,31707.92,29296.59,1,Security Incident,22.1238,95.217
+2025-07-30,Thailand,Chiang Mai,Chiang Dao,Chiang Dao Site 1,Conflict-Affected Villages,Education,School Supplies,INGO Bridge,Door-to-Door,Medium,3,683,439,18080.09,16725.77,0,Security Incident,19.444,99.0149
+2025-04-30,Thailand,Tak,Mae Sot,Mae Sot Site 2,Refugees,WASH,Sanitation Repair,Border Aid Alliance,Clinic Outreach,Medium,3,757,400,31767.16,27978.52,0,Security Incident,16.7269,98.543
+2025-11-27,Myanmar,Sagaing,Kale,Kale Site 5,Returnees,WASH,Sanitation Repair,Medical Relief Hub,Clinic Outreach,Medium,2,542,362,31040.54,22822.62,4,Security Incident,23.1723,94.0097
+2025-12-27,Myanmar,Kachin,Bhamo,Bhamo Site 1,Conflict-Affected Villages,Shelter,Camp Repair,Community Network,Mobile Team,Medium,3,1030,557,52227.85,18403.07,2,None,24.2857,97.1525
+2025-05-16,Myanmar,Rakhine,Sittwe,Sittwe Site 2,Refugees,Shelter,NFIs,UN Agency A,School-Based,Medium,3,600,336,18288.71,7096.78,4,None,20.0536,93.0027
+2025-05-15,Myanmar,Kachin,Bhamo,Bhamo Site 5,Conflict-Affected Villages,Health,Primary Care,Border Aid Alliance,Cash Transfer,Medium,2,1259,793,33981.58,26324.09,1,Weather,24.2504,97.1472
+2026-02-10,Myanmar,Rakhine,Buthidaung,Buthidaung Site 1,Refugees,Protection,Child Protection,UN Agency A,Door-to-Door,Medium,3,1085,598,34359.64,25215.71,2,Security Incident,20.86,92.5178
+2025-11-11,Myanmar,Shan,Taunggyi,Taunggyi Site 3,Refugees,Food Security,Food Basket,INGO Bridge,Cash Transfer,High,4,2611,1100,53020.39,34900.4,4,None,20.9,97.1522
+2025-11-19,Myanmar,Sagaing,Monywa,Monywa Site 5,Conflict-Affected Villages,WASH,Sanitation Repair,Border Aid Alliance,Cash Transfer,High,3,1231,671,51870.79,32148.27,4,Weather,22.0441,95.042
+2025-12-31,Thailand,Chiang Mai,Chiang Dao,Chiang Dao Site 3,Conflict-Affected Villages,Health,Primary Care,Medical Relief Hub,Mobile Team,High,3,1787,736,87399.4,75290.5,4,Security Incident,19.3539,99.0693
+2025-06-24,Thailand,Tak,Mae Sot,Mae Sot Site 6,IDPs,Health,Maternal Health,Border Aid Alliance,Camp Distribution,High,3,1326,714,50403.75,27864.17,4,None,16.6912,98.4693
+2025-05-05,Thailand,Tak,Mae Sot,Mae Sot Site 6,Host Community,Shelter,Emergency Shelter,INGO Bridge,School-Based,High,3,995,488,58475.0,38466.42,0,Weather,16.659,98.6245
+2025-01-15,Thailand,Kanchanaburi,Sai Yok,Sai Yok Site 3,Returnees,Food Security,Nutrition Support,Border Aid Alliance,Clinic Outreach,High,3,1718,925,79898.6,71080.93,3,Administrative Delay,14.3548,98.9402
+2025-06-17,Myanmar,Kachin,Bhamo,Bhamo Site 5,Returnees,Shelter,NFIs,Local CSO One,Mobile Team,Critical,4,1563,608,87858.89,39649.56,5,Security Incident,24.3579,97.1857
+2025-07-14,Thailand,Chiang Mai,Fang,Fang Site 6,IDPs,WASH,Clean Water,Local CSO One,Camp Distribution,Critical,5,1575,635,44200.71,21489.31,3,Road Closure,19.8543,99.2679
+2025-03-02,Thailand,Tak,Mae Sot,Mae Sot Site 1,Host Community,Education,Temporary Learning,INGO Bridge,Cash Transfer,High,4,476,241,15694.04,8741.22,1,Weather,16.6512,98.4637
+2026-01-14,Thailand,Tak,Phop Phra,Phop Phra Site 5,IDPs,Shelter,NFIs,Medical Relief Hub,Mobile Team,Critical,5,226,85,13236.98,8099.93,5,Road Closure,16.521,98.7957
+2025-08-25,Thailand,Tak,Phop Phra,Phop Phra Site 2,Conflict-Affected Villages,WASH,Sanitation Repair,Border Aid Alliance,Clinic Outreach,Low,1,1782,1133,66985.9,36598.18,2,Administrative Delay,16.4114,98.8364
+2025-09-21,Myanmar,Sagaing,Kale,Kale Site 2,Conflict-Affected Villages,Shelter,Camp Repair,INGO Bridge,Camp Distribution,Low,1,1020,763,61441.99,54700.05,1,Administrative Delay,23.2438,93.9326
+2025-09-19,Thailand,Mae Hong Son,Khun Yuam,Khun Yuam Site 4,IDPs,Shelter,Emergency Shelter,Community Network,Door-to-Door,Medium,2,607,318,11087.8,6144.01,1,Security Incident,18.756,97.8506
+2026-01-19,Myanmar,Kachin,Myitkyina,Myitkyina Site 5,Refugees,Food Security,Nutrition Support,Border Aid Alliance,Door-to-Door,Low,2,1984,1716,76985.94,30933.2,0,None,25.3873,97.3221
+2026-02-12,Thailand,Mae Hong Son,Pai,Pai Site 5,Returnees,Shelter,Camp Repair,INGO Bridge,Camp Distribution,Medium,3,816,489,20155.03,14185.9,3,None,19.3487,98.474
+2025-06-01,Myanmar,Sagaing,Shwebo,Shwebo Site 5,Host Community,Shelter,NFIs,Medical Relief Hub,School-Based,Medium,2,794,412,18040.21,14259.54,3,None,22.6483,95.7645
+2025-12-27,Thailand,Mae Hong Son,Pai,Pai Site 1,IDPs,Education,School Supplies,Local CSO One,School-Based,High,4,462,246,28929.22,12647.56,3,None,19.4457,98.4581
+2025-07-24,Thailand,Mae Hong Son,Pai,Pai Site 5,Host Community,Education,Temporary Learning,Local CSO One,Mobile Team,Low,1,600,511,20665.47,13828.96,1,Administrative Delay,19.4306,98.3582
+2025-11-24,Thailand,Tak,Tha Song Yang,Tha Song Yang Site 5,Returnees,Health,Maternal Health,Medical Relief Hub,Mobile Team,Medium,3,1307,853,24862.63,11583.22,1,None,17.3578,98.0763
+2026-02-17,Myanmar,Shan,Lashio,Lashio Site 3,IDPs,Education,Teacher Support,UN Agency A,Camp Distribution,High,4,1257,670,47570.6,34619.03,4,Security Incident,22.868,97.6438
+2025-04-02,Myanmar,Kachin,Myitkyina,Myitkyina Site 1,IDPs,WASH,Sanitation Repair,Border Aid Alliance,Door-to-Door,Medium,2,1549,1095,42299.32,17872.87,3,Weather,25.2835,97.3185
+2025-06-16,Thailand,Kanchanaburi,Thong Pha Phum,Thong Pha Phum Site 1,Refugees,Food Security,Food Basket,INGO Bridge,Clinic Outreach,High,3,548,223,21170.7,7702.07,3,Security Incident,14.7305,98.6288
+2025-12-05,Thailand,Mae Hong Son,Mae Hong Son,Mae Hong Son Site 2,Host Community,Food Security,Nutrition Support,Medical Relief Hub,Camp Distribution,High,4,1687,796,82910.34,45621.84,3,Road Closure,19.4013,97.9831
+2025-10-24,Myanmar,Kachin,Bhamo,Bhamo Site 2,Conflict-Affected Villages,Health,Vaccination,Border Aid Alliance,Clinic Outreach,Medium,3,1993,1430,81963.91,69438.69,1,None,24.1758,97.3517
+2025-08-08,Myanmar,Sagaing,Shwebo,Shwebo Site 1,IDPs,Protection,Child Protection,UN Agency A,Cash Transfer,Medium,3,933,544,18358.86,15615.96,2,None,22.5875,95.6825

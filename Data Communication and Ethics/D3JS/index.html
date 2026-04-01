@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanitarian Response Dashboard</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; margin: 20px; }
+        .dashboard-grid { display: grid; grid-template-columns: 250px 1fr; gap: 20px; }
+        .sidebar { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .filter-group { margin-bottom: 15px; }
+        select { width: 100%; padding: 8px; border-radius: 4px; }
+        .main-content { display: flex; flex-direction: column; gap: 20px; }
+        .kpi-container { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; }
+        .kpi-card { background: #fff; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-top: 4px solid #3498db; }
+        .kpi-value { font-size: 1.3em; font-weight: bold; color: #2c3e50; }
+        .kpi-label { font-size: 0.8em; color: #7f8c8d; text-transform: uppercase; margin-bottom: 5px; }
+        .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .chart-container { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); min-height: 350px; }
+        .chart-title { font-weight: bold; margin-bottom: 15px; color: #34495e; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .table-container { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; font-size: 0.9em; }
+        th { background-color: #f8f9fa; font-weight: bold; }
+        #tooltip { position: absolute; opacity: 0; background: rgba(0,0,0,0.85); color: #fff; padding: 10px; border-radius: 5px; pointer-events: none; font-size: 12px; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .bar-targeted { fill: #3498db; }
+        .bar-reached { fill: #2ecc71; }
+        .bar:hover { opacity: 0.8; stroke: #333; stroke-width: 1px; }
+    </style>
+</head>
+<body>
+
+    <div id="tooltip"></div>
+    <h2 style="color: #2c3e50;">Humanitarian Response Monitoring Dashboard</h2>
+
+    <div class="dashboard-grid">
+        <div class="sidebar">
+            <h3>Filters</h3>
+            <div class="filter-group"><label>Region</label><select id="filter-region"><option value="all">All Regions</option></select></div>
+            <div class="filter-group"><label>Country</label><select id="filter-country"><option value="all">All Countries</option></select></div>
+            <div class="filter-group"><label>Sector</label><select id="filter-sector"><option value="all">All Sectors</option></select></div>
+            <div class="filter-group"><label>Organization (Partner)</label><select id="filter-org"><option value="all">All Partners</option></select></div>
+            <button onclick="resetFilters()" style="width: 100%; padding: 10px; background: #e74c3c; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Reset All</button>
+        </div>
+
+        <div class="main-content">
+            <div class="kpi-container">
+                <div class="kpi-card"><div class="kpi-label">People Targeted</div><div id="kpi-targeted" class="kpi-value">0</div></div>
+                <div class="kpi-card"><div class="kpi-label">People Reached</div><div id="kpi-reached" class="kpi-value">0</div></div>
+                <div class="kpi-card"><div class="kpi-label">Funding Required</div><div id="kpi-required" class="kpi-value">$0</div></div>
+                <div class="kpi-card"><div class="kpi-label">Funding Received</div><div id="kpi-received" class="kpi-value">$0</div></div>
+                <div class="kpi-card" style="border-top-color: #e67e22;"><div class="kpi-label">Funding Gap %</div><div id="kpi-gap" class="kpi-value">0%</div></div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-container"><div class="chart-title">Coverage by Sector (Target vs Reach)</div><div id="grouped-bar"></div></div>
+                <div class="chart-container"><div class="chart-title">Monthly Funding Received Trend</div><div id="time-series"></div></div>
+                <div class="chart-container"><div class="chart-title">Top 10 Townships by Funding Gap</div><div id="ranking-chart"></div></div>
+                <div class="chart-container"><div class="chart-title">Incidents by Urgency Level</div><div id="additional-viz"></div></div>
+            </div>
+
+            <div class="table-container">
+                <div class="chart-title">Recent Operational Records</div>
+                <table id="data-table">
+                    <thead>
+                        <tr><th>Date</th><th>Township</th><th>Sector</th><th>Targeted</th><th>Reached</th><th>Gap %</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let fullData = [];
+        const parseDate = d3.timeParse("%Y-%m-%d");
+        const formatNum = d3.format(",.0f");
+        const formatCurr = d3.format("$,.0f");
+
+        d3.csv("humanitarian_response_dataset.csv").then(data => {
+            data.forEach(d => {
+                // MATCHING YOUR CSV COLUMNS EXACTLY
+                d.targeted = +d.people_in_need || 0;
+                d.reached = +d.people_reached || 0;
+                d.funding_required = +d.funding_required_usd || 0;
+                d.funding_received = +d.funding_received_usd || 0;
+                d.incidents = +d.incidents_reported || 0;
+                d.date = parseDate(d.date);
+                d.gap_val = d.funding_required > 0 ? Math.max(0, (d.funding_required - d.funding_received) / d.funding_required) : 0;
+            });
+            fullData = data;
+            
+            populateFilters();
+            updateDashboard();
+            d3.selectAll("select").on("change", updateDashboard);
+        });
+
+        function populateFilters() {
+            const regions = [...new Set(fullData.map(d => d.state_region))].sort();
+            const countries = [...new Set(fullData.map(d => d.country))].sort();
+            const sectors = [...new Set(fullData.map(d => d.sector))].sort();
+            const partners = [...new Set(fullData.map(d => d.partner))].sort();
+
+            d3.select("#filter-region").selectAll("option.val").data(regions).join("option").attr("class","val").text(d => d).attr("value", d => d);
+            d3.select("#filter-country").selectAll("option.val").data(countries).join("option").attr("class","val").text(d => d).attr("value", d => d);
+            d3.select("#filter-sector").selectAll("option.val").data(sectors).join("option").attr("class","val").text(d => d).attr("value", d => d);
+            d3.select("#filter-org").selectAll("option.val").data(partners).join("option").attr("class","val").text(d => d).attr("value", d => d);
+        }
+
+        function updateDashboard() {
+            const region = d3.select("#filter-region").property("value");
+            const country = d3.select("#filter-country").property("value");
+            const sector = d3.select("#filter-sector").property("value");
+            const partner = d3.select("#filter-org").property("value");
+
+            const filtered = fullData.filter(d => 
+                (region === "all" || d.state_region === region) &&
+                (country === "all" || d.country === country) &&
+                (sector === "all" || d.sector === sector) &&
+                (partner === "all" || d.partner === partner)
+            );
+
+            renderKPIs(filtered);
+            renderGroupedBar(filtered);
+            renderTimeSeries(filtered);
+            renderRanking(filtered);
+            renderAdditionalViz(filtered);
+            renderTable(filtered);
+        }
+
+        function renderKPIs(data) {
+            const targeted = d3.sum(data, d => d.targeted);
+            const reached = d3.sum(data, d => d.reached);
+            const req = d3.sum(data, d => d.funding_required);
+            const rec = d3.sum(data, d => d.funding_received);
+            const gap = req > 0 ? ((req - rec) / req) * 100 : 0;
+
+            d3.select("#kpi-targeted").text(formatNum(targeted));
+            d3.select("#kpi-reached").text(formatNum(reached));
+            d3.select("#kpi-required").text(formatCurr(req));
+            d3.select("#kpi-received").text(formatCurr(rec));
+            d3.select("#kpi-gap").text(gap.toFixed(1) + "%");
+        }
+
+        function renderGroupedBar(data) {
+            d3.select("#grouped-bar").html("");
+            const margin = {top: 10, right: 20, bottom: 60, left: 50}, width = 450 - margin.left - margin.right, height = 300 - margin.top - margin.bottom;
+            const svg = d3.select("#grouped-bar").append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+            const nested = d3.rollups(data, v => ({ targeted: d3.sum(v, d => d.targeted), reached: d3.sum(v, d => d.reached) }), d => d.sector);
+            const x0 = d3.scaleBand().domain(nested.map(d => d[0])).rangeRound([0, width]).paddingInner(0.2);
+            const x1 = d3.scaleBand().domain(['targeted', 'reached']).rangeRound([0, x0.bandwidth()]).padding(0.05);
+            const y = d3.scaleLinear().domain([0, d3.max(nested, d => Math.max(d[1].targeted, d[1].reached)) || 100]).nice().rangeRound([height, 0]);
+
+            svg.append("g").selectAll("g").data(nested).join("g").attr("transform", d => `translate(${x0(d[0])},0)`)
+                .selectAll("rect").data(d => [{key:'targeted', val:d[1].targeted, sec:d[0]}, {key:'reached', val:d[1].reached, sec:d[0]}]).join("rect")
+                .attr("x", d => x1(d.key)).attr("y", d => y(d.val)).attr("width", x1.bandwidth()).attr("height", d => height - y(d.val))
+                .attr("class", d => d.key === 'targeted' ? "bar-targeted" : "bar-reached")
+                .on("mouseover", function(event, d) {
+                    d3.select("#tooltip").style("opacity", 1).html(`<strong>${d.sec}</strong><br>${d.key.toUpperCase()}: ${formatNum(d.val)}`)
+                      .style("left", (event.pageX + 10) + "px").style("top", (event.pageY - 10) + "px");
+                }).on("mouseout", () => d3.select("#tooltip").style("opacity", 0));
+
+            svg.append("g").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x0)).selectAll("text").attr("transform", "rotate(-30)").style("text-anchor", "end");
+            svg.append("g").call(d3.axisLeft(y).ticks(5, "s"));
+        }
+
+        function renderTimeSeries(data) {
+            d3.select("#time-series").html("");
+            const margin = {top: 10, right: 30, bottom: 40, left: 50}, width = 450 - margin.left - margin.right, height = 300 - margin.top - margin.bottom;
+            const svg = d3.select("#time-series").append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+            const timeData = d3.rollups(data, v => d3.sum(v, d => d.funding_received), d => d3.timeMonth(d.date)).sort((a,b) => a[0] - b[0]);
+            const x = d3.scaleTime().domain(d3.extent(timeData, d => d[0])).range([0, width]);
+            const y = d3.scaleLinear().domain([0, d3.max(timeData, d => d[1]) || 1000]).nice().range([height, 0]);
+
+            svg.append("path").datum(timeData).attr("fill", "none").attr("stroke", "#e67e22").attr("stroke-width", 2.5).attr("d", d3.line().x(d => x(d[0])).y(d => y(d[1])));
+            svg.append("g").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(5));
+            svg.append("g").call(d3.axisLeft(y).ticks(5, "s"));
+        }
+
+        function renderRanking(data) {
+            d3.select("#ranking-chart").html("");
+            const margin = {top: 10, right: 30, bottom: 30, left: 100}, width = 450 - margin.left - margin.right, height = 300 - margin.top - margin.bottom;
+            const svg = d3.select("#ranking-chart").append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+            const rank = d3.rollups(data, v => d3.mean(v, d => d.gap_val), d => d.township).sort((a,b) => b[1] - a[1]).slice(0, 10);
+            const x = d3.scaleLinear().domain([0, 1]).range([0, width]);
+            const y = d3.scaleBand().domain(rank.map(d => d[0])).range([0, height]).padding(0.1);
+
+            svg.selectAll("rect").data(rank).join("rect").attr("x", 0).attr("y", d => y(d[0])).attr("width", d => x(d[1])).attr("height", y.bandwidth()).attr("fill", "#e74c3c");
+            svg.append("g").call(d3.axisLeft(y));
+            svg.append("g").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(5, "%"));
+        }
+
+        function renderAdditionalViz(data) {
+            d3.select("#additional-viz").html("");
+            const margin = {top: 10, right: 20, bottom: 40, left: 40}, width = 450 - margin.left - margin.right, height = 300 - margin.top - margin.bottom;
+            const svg = d3.select("#additional-viz").append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+            const urgency = d3.rollups(data, v => d3.sum(v, d => d.incidents), d => d.urgency);
+            const x = d3.scaleBand().domain(urgency.map(d => d[0])).range([0, width]).padding(0.3);
+            const y = d3.scaleLinear().domain([0, d3.max(urgency, d => d[1]) || 10]).nice().range([height, 0]);
+
+            svg.selectAll("rect").data(urgency).join("rect").attr("x", d => x(d[0])).attr("y", d => y(d[1])).attr("width", x.bandwidth()).attr("height", d => height - y(d.val || 0)).attr("fill", "#9b59b6")
+               .attr("height", d => height - y(d[1]));
+            svg.append("g").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x));
+            svg.append("g").call(d3.axisLeft(y));
+        }
+
+        function renderTable(data) {
+            const tbody = d3.select("#data-table tbody");
+            tbody.html("");
+            data.slice(0, 12).forEach(d => {
+                const row = tbody.append("tr");
+                row.append("td").text(d3.timeFormat("%Y-%m-%d")(d.date));
+                row.append("td").text(d.township);
+                row.append("td").text(d.sector);
+                row.append("td").text(formatNum(d.targeted));
+                row.append("td").text(formatNum(d.reached));
+                row.append("td").text((d.gap_val * 100).toFixed(1) + "%");
+            });
+        }
+
+        function resetFilters() { d3.selectAll("select").property("value", "all"); updateDashboard(); }
+    </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 This sub-repository is the Time Series Paper Presentation folder. 
 
-Paper Link: 
+Paper Link:  https://www.scimagojr.com/journalsearch.php?q=12140&tip=sid&clean=0#google_vignette
 
 Research websites: 
 

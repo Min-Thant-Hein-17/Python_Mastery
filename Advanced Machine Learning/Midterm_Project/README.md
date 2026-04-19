@@ -12,6 +12,7 @@ For running the file locally, we need to run the following lines in terminal com
 
 4.python app.py
 
+5.Ctrl + C (for stop/exit)
 
 Notes:
 

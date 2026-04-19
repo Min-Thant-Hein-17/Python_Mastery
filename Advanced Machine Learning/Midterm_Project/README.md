@@ -6,9 +6,11 @@ For running the file locally, we need to run the following lines in terminal com
 
 1.pip install flask pandas scikit-learn
 
-2.
+2.cd D:\MachineLearning\MinThantHein
 
-3.
+3.python train_model.py
+
+4.python app.py
 
 
 Notes:

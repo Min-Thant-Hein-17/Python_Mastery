@@ -8,3 +8,6 @@ Things to practice
 2. Noise remove methods to find and use!
 3. regularization (L1 and L2) to use for Parametric models and prune trees (preprune and post-prune methods) for non-parametric models
 4. 
+
+
+Final Project Directory: Python Mastery > Advanced Machine Learning > Deep Learning > Final Project

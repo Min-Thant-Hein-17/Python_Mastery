@@ -5,12 +5,57 @@
 Facebook Post: 
 https://www.facebook.com/share/p/1D9YttzYHg/ 
 
+There are 8 data pipeline patterns every data team should understand: 
 
-<p align="center">
-  <img src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/680964825_1430544365778929_7392777163300540965_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=hsJ3M2eti6wQ7kNvwEESqpv&_nc_oc=AdrLPcKmhImR43biGqv_h5otn0si6HU5WccnMstSHRJsIoNsZ-nYL7yNY3TszQ3uhhPbHLlqYAJOUUMBXkRJYYPI&_nc_zt=23&_nc_ht=scontent.fcnx3-1.fna&_nc_gid=MF4iTUMCGgsWNk0G4lgsAA&_nc_ss=7b289&oh=00_Af4Es2n54IwY-8FGzvAMfbkthkETBy0cQpNWQVfAjwTKBA&oe=69FC20F8"
-       alt="Python gears illustration"
-       width="700">
-</p>
+1. ETL (Extract, Transform, Load) Transform first, then load clean data into storage.
+
+2. ELT (Extract, Load, Transform) Load raw data first, transform inside modern warehouses.
+
+3. Streaming Pipeline Process events continuously with very low latency.
+
+4. Lambda Architecture
+
+Combine batch accuracy with real-time speed layers.
+
+5. Kappa Architecture Use one streaming system for real-time and replay.
+
+6. Micro-Batch Pipeline. Process small batches every few seconds or minutes.
+
+7. Fan-Out Pipeline Send one source stream to multiple destinations.
+
+8. Event-Driven Pipeline Trigger downstream actions automatically from events.
+
+How to Choose
+
+Need dashboards overnight. ETL
+
+Cloud warehouse analytics ELT
+
+Live alerts or fraud detection
+
+Streaming
+
+Mixed batch + real-time needs
+
+Lambda
+
+Stream-first systems - Kappa
+
+Near real-time with simpler ops
+
+Micro-batch
+
+Multiple consumers Fan-out
+
+Workflow automation Event-driven
+
+What This Means Architecture decisions directly affect speed, cost, and reliability.
+
+Choose patterns based on outcomes, not trends.
+
+
+<img width="1497" height="1846" alt="image" src="https://github.com/user-attachments/assets/597f22f2-3eb7-4410-9c1d-e01c5c4d0209" />
+
 
 
 ##########

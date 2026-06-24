@@ -62,6 +62,8 @@ Choose patterns based on outcomes, not trends.
 
 # How Data-pipelines work?
 
+https://www.linkedin.com/posts/sumonigupta_data-pipelines-only-look-complicated-until-share-7475458414203084800-gX8A/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU
+
 Below, there is a simple breakdown of how modern data pipelines actually move, transform, and deliver value inside a company:
 
 1. Data Sources

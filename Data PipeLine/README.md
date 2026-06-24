@@ -60,4 +60,36 @@ Choose patterns based on outcomes, not trends.
 
 ##########
 
+# How Data-pipelines work?
+
+Below, there is a simple breakdown of how modern data pipelines actually move, transform, and deliver value inside a company:
+
+1. Data Sources
+Everything starts with data from operational systems, SaaS tools, APIs, event streams, files, and connected devices - the raw fuel of the entire pipeline.
+
+2. Data Ingestion
+This raw data enters the platform through batch loads, real-time streaming, CDC, or schema detection pipelines designed for reliability and scale.
+
+3. Storage Layers
+Data is organized into raw (bronze), cleaned (silver), and curated (gold) layers, giving teams traceability, consistency, and analytics-ready datasets.
+
+4. Processing & Transformation
+Here, data is cleaned, standardized, deduplicated, enriched, aggregated, and incrementally updated so it becomes usable for reporting and downstream systems.
+
+5. Orchestration & Reliability
+Schedulers, dependency management, retry logic, backfills, alerts, and SLAs ensure the entire pipeline runs smoothly and can recover from failures.
+
+6. Quality & Governance
+Schema tests, freshness checks, lineage tracking, access control, audit logs, and metadata keep the environment compliant, trustworthy, and production-ready.
+
+7. Serving & Output
+The final stage turns data into action - powering dashboards, metric layers, reverse ETL tools, APIs, feature stores, and business decisions across the organization.
+
+Modern data pipelines aren’t just about moving data, they’re about creating a dependable flow that transforms messy inputs into clean, actionable intelligence that teams can trust every day.
+
+<img width="800" height="1111" alt="image" src="https://github.com/user-attachments/assets/f6ecc62e-43e0-47ff-8a66-435e30e244a0" />
+
+
+
+
 

@@ -89,7 +89,18 @@ Modern data pipelines aren’t just about moving data, they’re about creating 
 
 <img width="800" height="1111" alt="image" src="https://github.com/user-attachments/assets/f6ecc62e-43e0-47ff-8a66-435e30e244a0" />
 
+#####################################
 
+# How Modern Data-pipelines work?
+
+https://www.linkedin.com/posts/sumonigupta_data-pipelines-only-look-complicated-until-share-7475458414203084800-gX8A/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU 
+
+<img width="800" height="1111" alt="image" src="https://github.com/user-attachments/assets/0d957513-7c18-4981-824c-f85b87fdbd0c" />
+
+
+
+
+######################################
 
 
 

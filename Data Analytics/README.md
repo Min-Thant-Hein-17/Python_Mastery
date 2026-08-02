@@ -6,7 +6,7 @@ https://www.linkedin.com/posts/%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2-%F0%9D%97%97
 
 ############################
 
-Four types of analytics:
+# Four types of analytics:
 
 1. Descriptive Analytics
 Shows what happened through dashboards, reports, KPIs, and trend tracking.

@@ -10,9 +10,9 @@ https://docs.databricks.com/aws/en/
 
 ###################
 
-https://www.linkedin.com/posts/sumonigupta_15-databricks-youtube-resources-every-data-share-7489963160888557568-t51U/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU
+# 5 free YouTube resources for Databricks for Data Engineer:
 
-5 free YouTube resources for Databricks for Data Engineer:
+https://www.linkedin.com/posts/sumonigupta_15-databricks-youtube-resources-every-data-share-7489963160888557568-t51U/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU
 
 1. Databricks Data Engineer Associate – Full Course
 https://lnkd.in/gkt-mzQd

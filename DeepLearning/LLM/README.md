@@ -14,6 +14,10 @@ LLM Architecture Explained: https://www.facebook.com/share/p/1941JN7HwS/
 
 ###################################
 
+<img width="800" height="1000" alt="image" src="https://github.com/user-attachments/assets/751b9283-6a51-44fe-8750-0990c7c10f05" />
 
 
+https://www.linkedin.com/posts/rathanuday_ai-has-entered-its-platform-era-the-real-share-7489976946865487872-i_Mp/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU
+
+##########################
 

@@ -23,3 +23,20 @@ https://www.linkedin.com/posts/rathanuday_ai-has-entered-its-platform-era-the-re
 
 ##########################
 
+# 11 LLM Evaluation Methods
+
+<img width="800" height="1000" alt="image" src="https://github.com/user-attachments/assets/7056d1a4-b19d-4f02-bd8e-fed30f7475d7" />
+
+
+https://www.linkedin.com/posts/alok-sharan_llm-evaluation-is-where-ai-systems-either-share-7490013882997059584-uJPf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU
+
+#########################
+
+
+
+
+
+
+##############################
+
+

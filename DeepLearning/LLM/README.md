@@ -14,6 +14,8 @@ LLM Architecture Explained: https://www.facebook.com/share/p/1941JN7HwS/
 
 ###################################
 
+#  50 influential AI models and platforms shaping the industry in 2026
+
 <img width="800" height="1000" alt="image" src="https://github.com/user-attachments/assets/751b9283-6a51-44fe-8750-0990c7c10f05" />
 
 

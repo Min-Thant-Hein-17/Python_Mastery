@@ -238,3 +238,66 @@ This roadmap is based on the visual notes shared by **@mastercode.sagar** on Ins
 
 
 
+# Python Learning Roadmap
+
+This comprehensive roadmap is designed to build a strong foundation in Python, progressing from basic concepts to advanced topics and practical projects. 
+
+> **Reference:** Notes and structure are based on this [Instagram post by @mastercode.sagar](https://www.instagram.com/p/DbkFLsdk-e9/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==).
+
+---
+
+## 🗺️ Roadmap Overview
+
+The journey is divided into 9 main phases:
+1. **Basics**: Python Setup, Syntax, Variables, Operators, and I/O.
+2. **Control Flow**: `if-else`, loops (`for`, `while`), `break`, `continue`, and `pass`.
+3. **Data Structures**: Lists, Tuples, Sets, and Dictionaries.
+4. **Functions**: Definitions, Parameters, Return Statements, and Scope.
+5. **Modules & Packages**: Built-in modules, Custom modules, and PIP.
+6. **OOP**: Classes, Inheritance, Polymorphism, and Encapsulation.
+7. **File Handling**: Read/Write files, File modes, and `with open()`.
+8. **Advanced Topics**: Exception Handling, List Comprehensions, Lambda Functions, and Regex.
+9. **Projects**: Web Scraping, Automation, APIs, and building small projects.
+
+---
+
+## 📖 Phase 1: Basics Deep-Dive
+
+### 1. Python Set-up
+* **Install Python**: Go to python.org, download the latest version, and ensure you check "Add Python to PATH" before installing.
+* **Verify Installation**: Open your terminal or command prompt and type `python --version` (or `python -V`).
+* **Code Editor**: Visual Studio Code (VS Code) is recommended for beginners due to being lightweight and extensible.
+* **First Program**: Create a file named `hello.py`, write `print("Hello, Python!")`, and run it in the terminal using `python hello.py`.
+
+### 2. Syntax and Comments
+* **Python Syntax**: Python is case-sensitive, statements follow a logical order, and a new line signifies the end of a statement.
+* **Indentation**: Indentation is mandatory (usually 4 spaces) to define blocks of code, and compound statements start with a colon (`:`).
+* **Comments**: 
+  * Single-line comments start with a `#`.
+  * Multi-line comments are enclosed within triple quotes (`"""` or `'''`).
+  * Comments are ignored by the interpreter and help make code easy to maintain.
+
+### 3. Variables and Data Types
+* **Variables**: Variables store data values. You do not need to declare the type, and values are assigned using the `=` operator.
+* **Naming Rules**: Must start with a letter or underscore, cannot start with a number, cannot contain special characters, and cannot be a Python keyword.
+* **Multiple Assignment**: You can assign values to multiple variables in a single line (e.g., `a, b, c = 10, 20, 30`).
+* **Data Types**: 
+  * `int` (Integer numbers).
+  * `float` (Decimal numbers).
+  * `str` (Sequence of characters).
+  * `bool` (Boolean values: True or False).
+  * `list`, `tuple`, `set`, and `dict` are used for collections.
+* **Checking Types**: Use the `type()` function to check a variable's data type.
+
+### 4. Operators
+* **Arithmetic**: Addition (`+`), Subtraction (`-`), Multiplication (`*`), Division (`/`), Floor Division (`//`), Modulus (`%`), and Exponentiation (`**`).
+* **Comparison**: Equal (`==`), Not equal (`!=`), Greater than (`>`), Less than (`<`), Greater than or equal to (`>=`), Less than or equal to (`<=`).
+* **Assignment**: `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `**=`, `//=`.
+* **Logical**: `and`, `or`, `not`.
+* **Identity**: `is` (returns True if both are the same object), `is not`.
+* **Membership**: `in` (returns True if value is found in sequence), `not in`.
+
+### 5. Input and Output
+* **Input (`input()`)**: Takes input from the user and always returns a string.
+* **Type Casting**: Because `input()` returns a string, you must use functions like `int()`, `float()`, or `bool()` to convert the input into other data types.
+* **Output (`print()`)**: Displays text, variables, or multiple values. You can customize the output using the `sep` (separator) and `end` arguments.

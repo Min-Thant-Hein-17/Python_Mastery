@@ -8,79 +8,58 @@ Types of Data Pipelines
 
 # Data Engineering Roadmap: Systems Over Tools
 
-Core Philosophy: Data engineering isn't about memorizing random tools. It's about understanding the underlying systems and how data moves from source to insight.
+**Core Philosophy:** Data engineering isn't about memorizing random tools. It's about understanding the underlying systems and how data moves from source to insight.
 
-The 10 Layers of Data Engineering
+## The 10 Layers of Data Engineering
 A real roadmap is built layer by layer:
 
-Programming Foundations
+### 1. Programming Foundations
+- **Concepts:** Data structures, APIs, version control.
+- **Tools:** SQL, Python, Bash, Git.
 
-Concepts: Data structures, APIs, version control.
+### 2. Databases
+- **Concepts:** Data modeling, query optimization, NoSQL vs. Relational.
+- **Tools:** PostgreSQL, MySQL, MongoDB, Cassandra.
 
-Tools: SQL, Python, Bash, Git.
+### 3. Data Warehousing
+- **Concepts:** OLAP systems, star/snowflake schemas.
+- **Tools:** Snowflake, BigQuery, Redshift.
 
-Databases
+### 4. Data Pipelines
+- **Concepts:** ETL, ELT, workflow orchestration.
+- **Tools:** Airflow, Dagster, Prefect.
 
-Concepts: Data modeling, query optimization, NoSQL vs. Relational.
+### 5. Big Data Processing
+- **Concepts:** Distributed storage, parallel processing.
+- **Tools:** Spark, Databricks, Hadoop, Hive.
 
-Tools: PostgreSQL, MySQL, MongoDB, Cassandra.
+### 6. Streaming Systems
+- **Concepts:** Event-driven architecture, Change Data Capture (CDC), real-time analytics.
+- **Tools:** Kafka, Flink, Spark Streaming.
 
-Data Warehousing
+### 7. Data Quality & Governance
+- **Concepts:** Validation, deduplication, data lineage, monitoring, alerting.
+- **Tools:** Great Expectations.
 
-Concepts: OLAP systems, star/snowflake schemas.
+### 8. Cloud Data Stack
+- **Concepts:** Data lakes, lakehouse architecture.
+- **Tools:** AWS, GCP, Azure, S3.
 
-Tools: Snowflake, BigQuery, Redshift.
+### 9. Analytics Layer
+- **Concepts:** Metrics layer, Business Intelligence (BI).
+- **Tools:** Power BI, Tableau, Looker, dbt.
 
-Data Pipelines
+### 10. The Future of Data
+- **Concepts:** Data Mesh, AI-native pipelines, real-time AI analytics, autonomous platforms.
+- **Tools:** Vector databases.
 
-Concepts: ETL, ELT, workflow orchestration.
+---
 
-Tools: Airflow, Dagster, Prefect.
-
-Big Data Processing
-
-Concepts: Distributed storage, parallel processing.
-
-Tools: Spark, Databricks, Hadoop, Hive.
-
-Streaming Systems
-
-Concepts: Event-driven architecture, Change Data Capture (CDC), real-time analytics.
-
-Tools: Kafka, Flink, Spark Streaming.
-
-Data Quality & Governance
-
-Concepts: Validation, deduplication, data lineage, monitoring, alerting.
-
-Tools: Great Expectations.
-
-Cloud Data Stack
-
-Concepts: Data lakes, lakehouse architecture.
-
-Tools: AWS, GCP, Azure, S3.
-
-Analytics Layer
-
-Concepts: Metrics layer, Business Intelligence (BI).
-
-Tools: Power BI, Tableau, Looker, dbt.
-
-The Future of Data
-
-Concepts: Data Mesh, AI-native pipelines, real-time AI analytics, autonomous platforms.
-
-Tools: Vector databases.
-
-Key Takeaways
-Learn the tools.
-
-Understand the systems.
-
-Build the pipelines.
-
-Own the impact.
+## Key Takeaways
+- **Learn** the tools.
+- **Understand** the systems.
+- **Build** the pipelines.
+- **Own** the impact.
 
 # Data Engineering Master Tree:
 

@@ -6,7 +6,8 @@ Types of Data Pipelines
 
 ############
 
-Data Engineering Roadmap: Systems Over Tools
+# Data Engineering Roadmap: Systems Over Tools
+
 Core Philosophy: Data engineering isn't about memorizing random tools. It's about understanding the underlying systems and how data moves from source to insight.
 
 The 10 Layers of Data Engineering
@@ -81,11 +82,10 @@ Build the pipelines.
 
 Own the impact.
 
-Data Engineering Master Tree: 
+# Data Engineering Master Tree: https://www.linkedin.com/posts/abhisek-sahu-84a404b1_data-engineering-becomes-easier-when-you-share-7491862278728929281-GeiC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU
+
 
 <img width="800" height="1000" alt="image" src="https://github.com/user-attachments/assets/ecd8efd2-ce5f-4ea5-b355-926d6e91eb07" />
-
-https://www.linkedin.com/posts/abhisek-sahu-84a404b1_data-engineering-becomes-easier-when-you-share-7491862278728929281-GeiC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU
 
 ##########################
 

@@ -85,4 +85,9 @@ Data Engineering Master Tree:
 
 <img width="800" height="1000" alt="image" src="https://github.com/user-attachments/assets/ecd8efd2-ce5f-4ea5-b355-926d6e91eb07" />
 
+https://www.linkedin.com/posts/abhisek-sahu-84a404b1_data-engineering-becomes-easier-when-you-share-7491862278728929281-GeiC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU
+
+##########################
+
+
 

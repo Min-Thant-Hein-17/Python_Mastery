@@ -43,3 +43,16 @@ There are 7 types of API:
 
 API interview questions:
 https://www.facebook.com/share/p/1CpkBFZgeA/
+
+###############
+
+# 15 Important API terms
+
+<img width="800" height="999" alt="image" src="https://github.com/user-attachments/assets/16474fbd-7a3d-42fc-891a-abe929ba6a70" />
+
+
+########################
+
+
+
+

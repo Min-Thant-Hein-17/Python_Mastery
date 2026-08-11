@@ -50,6 +50,7 @@ https://www.facebook.com/share/p/1CpkBFZgeA/
 
 <img width="800" height="999" alt="image" src="https://github.com/user-attachments/assets/16474fbd-7a3d-42fc-891a-abe929ba6a70" />
 
+https://www.linkedin.com/feed/update/urn:li:activity:7492919749299953664/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHaP0wBZjsxWiHJdp633ueaDnLC6BAbmtU
 
 ########################
 

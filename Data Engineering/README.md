@@ -70,5 +70,11 @@ Source: https://www.linkedin.com/posts/abhisek-sahu-84a404b1_data-engineering-be
 
 ##########################
 
+Source: https://lnkd.in/p/ghY-x4KS
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/8b4007c4-6280-41a6-8705-8d4a1743d867" />
+
+
+#################
 
 

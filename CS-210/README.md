@@ -4,27 +4,27 @@ CS-210 is the class code from Parami University, introduction to Python Programm
 
 15 Weeks
 
-1.
+1. Introduction to Computer Science
 
-2.
+2. Data Structures and Algorithm
 
-3.
+3. Strings, Dictionaries, and Tuples
 
-4.
+4. Looping
 
-5. 
+5. Nested Looping Break Continue Pass
 
-6. 
+6. Modules (Namespaces)
 
-7. 
+7. Python Regex
 
-8. 
+8. OOP
 
-9. 
+9. Numpy
 
-10. 
+10.  Pandas 
 
-11. 
+11. Advanced Pandas
 
 12. 
 

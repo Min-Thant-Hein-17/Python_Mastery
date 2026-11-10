@@ -26,13 +26,13 @@ CS-210 is the class code from Parami University, introduction to Python Programm
 
 11. Advanced Pandas
 
-12. 
+12. Pandas Filtering
 
-13. 
+13. Plotting
 
-14. 
+14. Version Control Github
 
-15.
+15. Final Project 
 
 
 

@@ -1,3 +1,6 @@
+#Plotting-Earthquake Data
+
+
 # Problem: Analyzing Earthquake Impact Data
 
 A recent earthquake affected multiple regions, and the government wants to analyze the impact to prioritize aid distribution. You are provided with the following data:

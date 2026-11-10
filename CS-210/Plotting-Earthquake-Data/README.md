@@ -1,4 +1,4 @@
-#Plotting-Earthquake Data
+# Plotting-Earthquake Data
 
 
 # Problem: Analyzing Earthquake Impact Data

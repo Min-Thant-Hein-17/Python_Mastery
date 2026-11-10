@@ -2,6 +2,7 @@
 
 
 Disaster Relief Resource Management
+
 You are tasked with developing a simple system to manage disaster relief efforts following a natural disaster. Your system will help track different types of relief resources being distributed, the regions they are sent to, and the status of the affected regions.
 
 Problem Requirements:
